@@ -842,8 +842,8 @@ BubbleDescription:
 	next "reduce SPEED.@"
 
 DizzyPunchDescription:
-	db   "An attack that may"
-	next "cause confusion.@"
+	db   "Attack with a"
+	next "dazing punch.@"
 
 SporeDescription:
 	db   "A move that"
@@ -1190,8 +1190,8 @@ MetalClawDescription:
 	next "up user's ATTACK.@"
 
 VitalThrowDescription:
-	db   "A 2nd-strike move"
-	next "that never misses.@"
+	db   "Attack by throwing"
+	next "the target.@"
 
 MorningSunDescription:
 	db   "Restores HP"
