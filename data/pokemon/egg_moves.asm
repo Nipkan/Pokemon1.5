@@ -14,387 +14,470 @@ SECTION "Egg Moves", ROMX
 INCLUDE "data/pokemon/egg_move_pointers.asm"
 
 BulbasaurEggMoves:
-	db LIGHT_SCREEN
+	db TAKE_DOWN
 	db SKULL_BASH
-	db SAFEGUARD
-	db RAZOR_WIND
-	db PETAL_DANCE
+	db SLUDGE_BOMB
+	db CHARM
+	db ACID
 	db -1 ; end
 
 CharmanderEggMoves:
-	db BELLY_DRUM
+	db FURY_SWIPES
+	db TAKE_DOWN
+	db SKULL_BASH
+	db SACRED_FIRE
 	db ANCIENTPOWER
-	db ROCK_SLIDE
-	db BITE
-	db OUTRAGE
-	db BEAT_UP
 	db -1 ; end
 
 SquirtleEggMoves:
-	db MIRROR_COAT
-	db HAZE
+	db POWDER_SNOW
+	db TWISTER
 	db MIST
 	db CONFUSION
-	db FORESIGHT
-	db FLAIL
+	db BARRIER
 	db -1 ; end
+
+CaterpieEggMoves:
+	db SPIDER_WEB
+	db PIN_MISSILE
+	db ACID
+	db CONFUSION
+	db BARRIER
+	db -1 ; end
+	
+WeedleEggMoves:
+	db HEADBUTT
+	db SPIKE_CANNON
+	db SMOG
+	db LEECH_LIFE
+	db MEGAHORN
+	db -1 ; end
+
 
 PidgeyEggMoves:
 	db PURSUIT
 	db FAINT_ATTACK
-	db FORESIGHT
+	db LEER
 	db STEEL_WING
+	db DRILL_PECK
 	db -1 ; end
 
 RattataEggMoves:
-	db SCREECH
-	db FLAME_WHEEL
-	db FURY_SWIPES
-	db BITE
-	db COUNTER
-	db REVERSAL
+	db TAKE_DOWN
+	db POWDER_SNOW
+	db LEER
+	db SPITE
 	db -1 ; end
 
 SpearowEggMoves:
 	db FAINT_ATTACK
+	db SUPERSONIC
+	db HAZE
 	db FALSE_SWIPE
-	db SCARY_FACE
-	db QUICK_ATTACK
-	db TRI_ATTACK
+	db WING_ATTACK
 	db -1 ; end
 
 EkansEggMoves:
 	db PURSUIT
-	db SLAM
+	db SLUDGE
+	db BIND
 	db SPITE
-	db BEAT_UP
-	db CRUNCH
+	db SMOG
 	db -1 ; end
 
 SandshrewEggMoves:
-	db FLAIL
+	db ROCK_THROW
 	db SAFEGUARD
-	db COUNTER
-	db RAPID_SPIN
-	db METAL_CLAW
+	db SKULL_BASH
+	db SEISMIC_TOSS
 	db -1 ; end
 
 NidoranFEggMoves:
-	db SUPERSONIC
-	db DISABLE
-	db TAKE_DOWN
+	db HYPER_FANG
+	db POWDER_SNOW
+	db THRASH
 	db FOCUS_ENERGY
-	db COUNTER
-	db BEAT_UP
+	db CHARM
 	db -1 ; end
 
 NidoranMEggMoves:
-	db SUPERSONIC
-	db DISABLE
+	db SUPER_FANG
+	db EMBER
 	db TAKE_DOWN
-	db CONFUSION
-	db AMNESIA
-	db COUNTER
-	db BEAT_UP
+	db BIDE
+	db RAGE
 	db -1 ; end
 
 
 ZubatEggMoves:
-	db QUICK_ATTACK
+	db MIRROR_MOVE
 	db PURSUIT
 	db FAINT_ATTACK
-	db GUST
-	db WHIRLWIND
+	db LEER
+	db STEEL_WING
 	db -1 ; end
 
 OddishEggMoves:
 	db SWORDS_DANCE
-	db RAZOR_LEAF
-	db FLAIL
-	db SYNTHESIS
+	db POISON_GAS
+	db LEECH_SEED
+	db GROWTH
+	db SPORE
 	db -1 ; end
 
 VenonatEggMoves:
-	db BATON_PASS
+	db POISON_STING
 	db SCREECH
-	db GIGA_DRAIN
+	db TELEPORT
+	db PSYWAVE
+	db HYPNOSIS
 	db -1 ; end
 
 DiglettEggMoves:
-	db FAINT_ATTACK
-	db SCREECH
-	db ANCIENTPOWER
+	db ROCK_THROW
+	db SKULL_BASH
+	db SPIKES
+;	db ANCIENTPOWER // i forgot what i did with ancientpower...
 	db PURSUIT
-	db BEAT_UP
 	db -1 ; end
 
 
 PsyduckEggMoves:
-	db ICE_BEAM
+	db WATER_GUN
 	db HYPNOSIS
-	db PSYBEAM
-	db FORESIGHT
-	db LIGHT_SCREEN
-	db FUTURE_SIGHT
-	db PSYCHIC_M
-	db CROSS_CHOP
+	db AMNESIA
+	db SUPERSONIC
+	db SPITE
 	db -1 ; end
 
 MankeyEggMoves:
-	db ROCK_SLIDE
-	db FORESIGHT
+	db BIDE
+	db ROLLING_KICK
+	db BELLY_DRUM
 	db MEDITATE
 	db COUNTER
-	db REVERSAL
-	db BEAT_UP
 	db -1 ; end
 
 
 PoliwagEggMoves:
-	db MIST
+	db TAKE_DOWN
 	db SPLASH
 	db BUBBLEBEAM
 	db HAZE
-	db MIND_READER
+	db FUTURE_SIGHT
 	db -1 ; end
 
 AbraEggMoves:
-	db LIGHT_SCREEN
+	db RAPID_SPIN
 	db ENCORE
 	db BARRIER
+	db MEDITATE
+	db MIRROR_COAT
 	db -1 ; end
 
 MachopEggMoves:
-	db LIGHT_SCREEN
-	db MEDITATE
-	db ROLLING_KICK
-	db ENCORE
+	db VITAL_THROW
+	db DOUBLESLAP
+	db COUNTER
+	db ROCK_THROW
+	db FALSE_SWIPE
 	db -1 ; end
 
 BellsproutEggMoves:
 	db SWORDS_DANCE
-	db ENCORE
-	db REFLECT
-	db SYNTHESIS
-	db LEECH_LIFE
+	db RAZOR_WIND
+	db LEECH_SEED
+	db GROWTH
+	db SPORE
 	db -1 ; end
 
 TentacoolEggMoves:
-	db AURORA_BEAM
-	db MIRROR_COAT
-	db RAPID_SPIN
-	db HAZE
-	db SAFEGUARD
+	db BUBBLEBEAM
+	db CONFUSE_RAY
+	db BUBBLE
+	db SMOG
+	db BIND
 	db -1 ; end
 
 GeodudeEggMoves:
 	db MEGA_PUNCH
+	db ROCK_SLIDE
+	db SUBMISSION
+	db RAPID_SPIN
+	db CROSS_CHOP
 	db -1 ; end
 
 KoltaEggMoves:
 	db FLAME_WHEEL
 	db THRASH
-	db DOUBLE_KICK
-	db HYPNOSIS
+	db BITE
+	db LICK
 	db QUICK_ATTACK
 	db -1 ; end
 
 SlowpokeEggMoves:
 	db SAFEGUARD
-	db BELLY_DRUM
 	db FUTURE_SIGHT
-	db STOMP
+	db LIGHT_SCREEN
+	db OCTAZOOKA
+	db ICE_BEAM
+	db -1 ; end
+	
+MagnemiteEggMoves:
+	db THUNDER
+	db TAKE_DOWN
+	db AGILITY
+	db RECOVER
+	db REFLECT
 	db -1 ; end
 
 FarfetchDEggMoves:
 	db STEEL_WING
-	db FORESIGHT
+	db BONE_CLUB
 	db MIRROR_MOVE
 	db GUST
-	db QUICK_ATTACK
-	db FLAIL
+	db TWISTER
 	db -1 ; end
 
 DodaerieEggMoves:
-	db QUICK_ATTACK
+	db WING_ATTACK
 	db SUPERSONIC
 	db HAZE
 	db FAINT_ATTACK
-	db FLAIL
+	db MIRROR_MOVE
 	db -1 ; end
 
 SeelEggMoves:
-	db LICK
-	db PERISH_SONG
-	db DISABLE
-	db PECK
+	db HORN_DRILL
+	db POWDER_SNOW
+	db TWISTER
+	db PURSUIT
 	db SLAM
-	db ENCORE
+	db -1 ; end
+
+GrimerEggMoves:
+	db STRUGGLE
+	db MEAN_LOOK
+	db SMOG
+	db FAINT_ATTACK
+	db RECOVER
+	db HAZE
 	db -1 ; end
 
 ShellderEggMoves:
 	db BUBBLEBEAM
 	db TAKE_DOWN
-	db BARRIER
-	db RAPID_SPIN
-	db SCREECH
+	db CONFUSE_RAY
+	db LEER
+	db SPIKE_CANNON
 	db -1 ; end
 
 GastlyEggMoves:
 	db PSYWAVE
 	db PERISH_SONG
-	db HAZE
+	db TELEPORT
+;	db BEAT_UP // no mons learn this, i'm replacing it with a 97 move
+	db CONFUSION
 	db -1 ; end
 
 OnixEggMoves:
 	db ROCK_SLIDE
-	db FLAIL
+	db RAPID_SPIN
+	db THRASH
+	db BIDE
+	db LOCK_ON
 	db -1 ; end
 
 DrowzeeEggMoves:
-	db LIGHT_SCREEN
-	db BARRIER
+	db SUBMISSION
+	db KINESIS
+	db SONICBOOM
+	db MIND_READER
+	db BATON_PASS
 	db -1 ; end
 
 KrabbyEggMoves:
-	db DIG
 	db HAZE
-	db AMNESIA
-	db FLAIL
-	db SLAM
+	db CROSS_CHOP
+	db DIG
+	db SLASH
+	db WITHDRAW
+	db -1 ; end
+	
+VoltorbEggMoves:
+	db TRI_ATTACK
+	db LOCK_ON
+	db SPARK
+	db BARRIER
+	db QUICK_ATTACK
 	db -1 ; end
 
 ExeggcuteEggMoves:
 	db SYNTHESIS
-	db MOONLIGHT
+	db SCARY_FACE
 	db REFLECT
-	db MEGA_DRAIN
-	db ANCIENTPOWER
+	db SOFTBOILED
+	db DOUBLE_EDGE
 	db -1 ; end
 
 CuboneEggMoves:
-	db ROCK_SLIDE
-	db ANCIENTPOWER
-	db BELLY_DRUM
-	db SCREECH
+	db KARATE_CHOP
+	db VITAL_THROW
+	db COUNTER
+	db RAGE
 	db SKULL_BASH
-	db PERISH_SONG
-	db SWORDS_DANCE
 	db -1 ; end
 
 LickitungEggMoves:
 	db BELLY_DRUM
 	db MAGNITUDE
 	db BODY_SLAM
+	db DOUBLESLAP
+	db SUBSTITUTE
 	db -1 ; end
 
 KoffingEggMoves:
 	db SCREECH
-	db PSYWAVE
-	db PSYBEAM
-	db DESTINY_BOND
-	db PAIN_SPLIT
+	db ACID
+	db SUPERSONIC
+	db CONFUSE_RAY
+	db SLUDGE_BOMB
 	db -1 ; end
 
 RhyhornEggMoves:
 	db CRUNCH
-	db REVERSAL
+	db BODY_SLAM
+	db ROCK_SLIDE
 	db THRASH
 	db PURSUIT
-	db COUNTER
-	db MAGNITUDE
 	db -1 ; end
 
 ChanseyEggMoves:
 	db PRESENT
 	db METRONOME
-	db HEAL_BELL
+	db SPARK
+	db THUNDERBOLT
+	db MOONLIGHT
 	db -1 ; end
 
 KangaskhanEggMoves:
 	db STOMP
-	db FORESIGHT
+	db SCARY_FACE
 	db FOCUS_ENERGY
-	db SAFEGUARD
-	db DISABLE
+	db FALSE_SWIPE
+	db DOUBLE_KICK
 	db -1 ; end
 
 HorseaEggMoves:
 	db FLAIL
 	db AURORA_BEAM
-	db OCTAZOOKA
-	db DISABLE
+	db CONFUSE_RAY
+	db POWDER_SNOW
 	db SPLASH
-	db DRAGON_RAGE
 	db -1 ; end
 
 StaryuEggMoves:
+	db ACID
+	db BARRIER
+	db SUPERSONIC
+	db HARDEN
+;	db ANCIENTPOWER
 	db -1 ; end
 
 ScytherEggMoves:
 	db COUNTER
 	db SAFEGUARD
 	db BATON_PASS
-	db RAZOR_WIND
-	db REVERSAL
-	db LIGHT_SCREEN
+	db HARDEN
+	db GIGA_DRAIN
 	db -1 ; end
 
 PinsirEggMoves:
 	db FURY_ATTACK
-	db FLAIL
+	db REVERSAL
+	db CROSS_CHOP
+	db GIGA_DRAIN
+	db COUNTER
 	db -1 ; end
 
+MagikarpEggMoves:
+	db PSYBEAM
+	db TWISTER
+	db WATER_GUN
+	db HYDRO_PUMP
+	db MINIMIZE
+	db -1 ; end
+	
 LaprasEggMoves:
 	db AURORA_BEAM
-	db FORESIGHT
+	db FOCUS_ENERGY
+	db STOMP
+	db THRASH
+	db PURSUIT
 	db -1 ; end
 
 EeveeEggMoves:
 	db FLAIL
+	db PRESENT
+	db MILK_DRINK
+	db SWEET_SCENT
+	db SAFEGUARD
+	db -1 ; end
+	
+PorygonEggMoves:
+	db TRI_ATTACK
+	db MIRROR_COAT
+	db SPARK
+	db BARRIER
+	db QUICK_ATTACK
 	db -1 ; end
 
 OmanyteEggMoves:
-	db BUBBLEBEAM
+	db BARRIER
 	db AURORA_BEAM
-	db SLAM
+	db ACID
 	db SUPERSONIC
-	db HAZE
+	db PURSUIT
 	db -1 ; end
 
 KabutoEggMoves:
-	db BUBBLEBEAM
+	db BUBBLE
+	db CONFUSION
+	db BARRIER
+	db CONFUSE_RAY
 	db AURORA_BEAM
-	db RAPID_SPIN
-	db DIG
-	db FLAIL
 	db -1 ; end
 
 AerodactylEggMoves:
-	db WHIRLWIND
+;	db AEROBLAST // aeroblast didn't exist. still couldn't get this if it did
 	db PURSUIT
-	db FORESIGHT
+	db LEER
 	db STEEL_WING
+	db TRI_ATTACK
 	db -1 ; end
 
 SnorlaxEggMoves:
-	db LICK
+	db BIDE
+	db SWEET_SCENT
+	db HEAL_BELL
+	db STOMP
+	db MILK_DRINK
 	db -1 ; end
 
 DratiniEggMoves:
-	db LIGHT_SCREEN
-	db MIST
 	db HAZE
 	db SUPERSONIC
+	db PSYBEAM
+	db TWISTER
+	db PURSUIT
 	db -1 ; end
 
 ChikoritaEggMoves:
 	db VINE_WHIP
 	db LEECH_SEED
-	db COUNTER
-	db ANCIENTPOWER
-	db FLAIL
-	db SWORDS_DANCE
+	db THRASH
+	db CRUNCH
+	db CONFUSE_RAY
 	db -1 ; end
 
 CubburnEggMoves:
@@ -417,11 +500,11 @@ PalssioEggMoves:
 	db -1 ; end
 
 BurgelaEggMoves:
-	db FLAIL
-	db CONFUSION
-	db MEGA_DRAIN
-	db REFLECT
-	db AMNESIA
+	db LEECH_SEED
+	db RAZOR_LEAF
+	db SMOG
+	db SLUDGE
+	db POISON_GAS
 	db -1 ; end
 
 HoothootEggMoves:
@@ -435,16 +518,18 @@ HoothootEggMoves:
 
 LedybaEggMoves:
 	db PSYBEAM
-	db BIDE
-	db LIGHT_SCREEN
+	db FALSE_SWIPE
+	db POISONPOWDER
+	db FAINT_ATTACK
+	db LEECH_LIFE
 	db -1 ; end
 
 SpinarakEggMoves:
-	db PSYBEAM
-	db DISABLE
+	db SPIDER_WEB
+	db FLAIL
 	db SONICBOOM
 	db BATON_PASS
-	db PURSUIT
+	db SLASH
 	db -1 ; end
 
 TykerEggMoves:
@@ -454,62 +539,59 @@ TykerEggMoves:
 	db -1 ; end
 
 PichuEggMoves:
-	db REVERSAL
-	db BIDE
+	db SPARK
+	db METRONOME
 	db PRESENT
-	db ENCORE
-	db DOUBLESLAP
+	db MILK_DRINK
+	db HEAL_BELL
 	db -1 ; end
 
 CleffaEggMoves:
-	db PRESENT
-	db METRONOME
-	db AMNESIA
-	db BELLY_DRUM
-	db SPLASH
-	db MIMIC
+	db EGG_BOMB
+	db SWEET_SCENT
+	db HEAL_BELL
+	db MILK_DRINK
+	db SPLASH ;earliest was actually milk drink, again. became splash in 24 hours
 	db -1 ; end
 
 IgglybuffEggMoves:
-	db PERISH_SONG
-	db PRESENT
-	db FAINT_ATTACK
+	db EGG_BOMB
+	db MILK_DRINK
+	db SPARK
+	db HEAL_BELL
+	db SWEET_SCENT
 	db -1 ; end
 
 TogepiEggMoves:
 	db PRESENT
-	db MIRROR_MOVE
-	db PECK
-	db FORESIGHT
-	db FUTURE_SIGHT
+	db SPARK
+	db HEAL_BELL
+	db SWEET_SCENT
+	db EGG_BOMB
 	db -1 ; end
 
 NatuEggMoves:
-	db HAZE
+	db MIRROR_MOVE
 	db DRILL_PECK
-	db QUICK_ATTACK
+	db GUST
 	db FAINT_ATTACK
 	db STEEL_WING
 	db -1 ; end
 
 MareepEggMoves:
 	db THUNDERBOLT
-	db TAKE_DOWN
-	db BODY_SLAM
+	db THUNDERPUNCH
+	db BITE ;was overwritten by earthquake on accident?
 	db SAFEGUARD
 	db SCREECH
-	db REFLECT
 	db -1 ; end
 
 MarillEggMoves:
-	db LIGHT_SCREEN
+	db METRONOME
 	db PRESENT
-	db AMNESIA
-	db FUTURE_SIGHT
-	db BELLY_DRUM
-	db PERISH_SONG
-	db SUPERSONIC
-	db FORESIGHT
+	db MILK_DRINK
+	db HEAL_BELL
+	db AURORA_BEAM
 	db -1 ; end
 
 GrenmarEggMoves:
@@ -522,30 +604,35 @@ GrenmarEggMoves:
 	db -1 ; end
 
 HoppipEggMoves:
-	db CONFUSION
-	db GROWL
-	db ENCORE
-	db DOUBLE_EDGE
+	db RAZOR_LEAF
+	db SLUDGE_BOMB
+	db CONFUSE_RAY
+	db SPORE
 	db REFLECT
-	db AMNESIA
-	db PAY_DAY
 	db -1 ; end
 
 AipomEggMoves:
-	db COUNTER
-	db SCREECH
-	db PURSUIT
-	db AGILITY
-	db SPITE
-	db SLAM
-	db DOUBLESLAP
-	db BEAT_UP
+	db THUNDERSHOCK
+	db LIGHT_SCREEN
+	db SAFEGUARD
+	db FALSE_SWIPE
+	db GROWL
 	db -1 ; end
 	
 OrfryEggMoves:
 	db PSYBEAM
-	db HAZE
+	db TWISTER
 	db HYDRO_PUMP
+	db WATER_GUN
+	db LEER
+	db -1 ; end
+
+SunfloraEggMoves:
+	db SMOG
+	db PSYBEAM
+	db VINE_WHIP
+	db ACID
+	db LEECH_SEED
 	db -1 ; end
 
 MolambinoEggMoves:
@@ -570,18 +657,27 @@ MurkrowEggMoves:
 	db -1 ; end
 
 VulpiiiEggMoves:
-	db FAINT_ATTACK
-	db HYPNOSIS
-	db FLAIL
-	db SPITE
-	db DISABLE
+	db BITE
+	db LOVELY_KISS
+	db REVERSAL
+	db FUTURE_SIGHT
+	db SACRED_FIRE
+	db -1 ; end
+
+UnownEggMoves:
+	db TRI_ATTACK
+	db LOCK_ON
+	db RECOVER
+	db PSYBEAM
+	db LIGHT_SCREEN
 	db -1 ; end
 
 BipullaEggMoves:
-	db AMNESIA
-	db FORESIGHT
-	db FUTURE_SIGHT
-	db BEAT_UP
+	db MIST
+	db SPITE
+	db DISABLE
+	db SCREECH
+	db BITE
 	db -1 ; end
 
 DisturbanEggMoves:
@@ -597,31 +693,28 @@ SmujjEggMoves:
 	db -1 ; end
 
 ParasporEggMoves:
-	db FALSE_SWIPE
-	db SCREECH
-	db COUNTER
-	db PSYBEAM
+	db VICEGRIP
+	db MEGAHORN
+	db CROSS_CHOP
+	db ACID
 	db FLAIL
-	db SWEET_SCENT
-	db LIGHT_SCREEN
-	db PURSUIT
 	db -1 ; end
 
 SnubbullEggMoves:
-	db METRONOME
-	db FAINT_ATTACK
+	db SAND_ATTACK
+	db THUNDERSHOCK
 	db REFLECT
 	db PRESENT
 	db CRUNCH
-	db HEAL_BELL
-	db LICK
-	db LEER
 	db -1 ; end
 	
 QuagsireEggMoves:
+	db COUNTER
 	db HYDRO_PUMP
-	db DRAGON_RAGE
-	db FAINT_ATTACK
+	db PURSUIT
+	db HAZE
+	db SPITE
+	db -1 ; end. this was missing in the original repository
 
 MoibelleEggMoves:
 	db SPITE
@@ -629,23 +722,24 @@ MoibelleEggMoves:
 	db AMNESIA
 	db -1 ; end
 
-SneaselEggMoves:
-	db COUNTER
+SneaselEggMoves: ;this was sneasel's egg move pool while they had this design :)
+	db LICK
 	db SPITE
-	db FORESIGHT
-	db REFLECT
+	db DISABLE
+	db MIRROR_COAT
 	db BITE
 	db -1 ; end
 
 QwilfishEggMoves:
-	db FLAIL
-	db HAZE
-	db BUBBLEBEAM
-	db SUPERSONIC
-	db THUNDERBOLT
+	db PSYBEAM
+	db LEER
+	db MINIMIZE
+	db TWISTER
+	db THRASH
 	db -1 ; end
 
 CoinpurEggMoves:
+	db GLARE
 	db SPITE
 	db HYPNOSIS
 	db AMNESIA
@@ -654,67 +748,79 @@ CoinpurEggMoves:
 StromenEggMoves:
 	db SCREECH
 	db DESTINY_BOND
+	db CURSE ;should probably have this be here so you don't need to be lvl 100
 	db -1 ; end
 
 PupperonEggMoves:
-	db BODY_SLAM
-	db SAFEGUARD
+	db SACRED_FIRE
+	db SUNNY_DAY
 	db CRUNCH
 	db THRASH
 	db FIRE_SPIN
 	db -1 ; end
 
 RemoraidEggMoves:
-	db AURORA_BEAM
-	db OCTAZOOKA
-	db SUPERSONIC
-	db HAZE
-	db SCREECH
+	db HYPNOSIS
+	db BUBBLE
+	db CONFUSION
+	db DISABLE
+	db ACID
 	db -1 ; end
 
 DelibirdEggMoves:
 	db AURORA_BEAM
-	db QUICK_ATTACK
-	db FUTURE_SIGHT
-	db SPLASH
-	db RAPID_SPIN
+	db MILK_DRINK
+	db POWDER_SNOW
+	db TWISTER
+	db WATER_GUN
 	db -1 ; end
 
 MantineEggMoves:
-	db TWISTER
+	db TAIL_WHIP
 	db HYDRO_PUMP
 	db HAZE
 	db SLAM
+	db PURSUIT 
 	db -1 ; end
 
 SkarmoryEggMoves:
 	db DRILL_PECK
-	db PURSUIT
+;	db AEROBLAST // can't be learned, didn't exist either
 	db WHIRLWIND
-	db SKY_ATTACK
+	db HAZE
+	db MIRROR_MOVE
 	db -1 ; end
 
 HoundourEggMoves:
 	db FIRE_SPIN
-	db RAGE
-	db PURSUIT
+	db DRAGON_RAGE ; rage was cooler
+	db SACRED_FIRE
 	db COUNTER
-	db SPITE
-	db REVERSAL
-	db BEAT_UP
+	db FOCUS_ENERGY
 	db -1 ; end
 
 PhanpyEggMoves:
 	db FOCUS_ENERGY
-	db BODY_SLAM
-	db ANCIENTPOWER
-	db WATER_GUN
+	db SAND_ATTACK
+;	db ANCIENTPOWER ???
+	db COUNTER
+	db LOCK_ON
 	db -1 ; end
 
 BallerineEggMoves:
-	db FUTURE_SIGHT
-	db HYPNOSIS
-	db MIMIC
+	db LOVELY_KISS
+	db PERISH_SONG
+	db QUICK_ATTACK
+	db SMOG
+	db PURSUIT
+	db -1 ; end
+
+SmeargleEggMoves:
+	db ENCORE
+	db COUNTER
+	db REFLECT
+	db PRESENT
+	db MIST
 	db -1 ; end
 
 TyrogueEggMoves:
@@ -725,29 +831,35 @@ TyrogueEggMoves:
 	db -1 ; end
 
 SmoochumEggMoves:
-	db MEDITATE
+	db LOVELY_KISS
+	db QUICK_ATTACK
+	db SMOG
+	db PRESENT
+	db MIST
 	db -1 ; end
 
 ElekidEggMoves:
-	db KARATE_CHOP
+	db ENCORE
+	db PSYBEAM
 	db BARRIER
-	db ROLLING_KICK
-	db MEDITATE
-	db CROSS_CHOP
+	db SCREECH
+	db THRASH
 	db -1 ; end
 
 MagbyEggMoves:
-	db KARATE_CHOP
-	db MEGA_PUNCH
+	db ENCORE
+	db PSYBEAM
 	db BARRIER
 	db SCREECH
-	db CROSS_CHOP
+	db THRASH
 	db -1 ; end
 
 MiltankEggMoves:
 	db PRESENT
-	db REVERSAL
-	db SEISMIC_TOSS
+	db METRONOME
+	db SPARK
+	db THUNDERBOLT
+	db MOONLIGHT
 	db -1 ; end
 
 WarfursEggMoves:

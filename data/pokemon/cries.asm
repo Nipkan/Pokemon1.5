@@ -167,7 +167,7 @@ PokemonCries::
 	mon_cry CRY_PALSSIO,     -$010,  $0c0 ; DONMARIN
 	mon_cry CRY_GOLEM,       $060,  $0c0 ; TANG
 	mon_cry CRY_GOLEM,      -$010,  $1a0 ; JUNGELA
-	mon_cry CRY_HOOTHOOT,    $091,  $0d8 ; HOOTHOOT
+	mon_cry CRY_HOOTHOOT,    $0A6,  $0d8 ; HOOTHOOT
 	mon_cry CRY_HOOTHOOT,    $000,  $1a0 ; NOCTOWL
 	mon_cry CRY_LEDYBA,      $000,  $0de ; LEDYBA
 	mon_cry CRY_LEDYBA,     -$096,  $138 ; LEDIAN
@@ -189,7 +189,7 @@ PokemonCries::
 	mon_cry CRY_CLEFFA,      $084,  $150 ; BELLOSSOM
 	mon_cry CRY_MARILL,      $11b,  $120 ; MARILL
 	mon_cry CRY_BULBASAUR,   $f40,  $180 ; GRENMAR
-	mon_cry CRY_WEEPINBELL,  $084,  $150 ; BELLIGNAN
+	mon_cry CRY_SLOWKING, 	 $23c,  $110 ; BELLIGNAN
 	mon_cry CRY_CLEFFA,     -$2a3,  $1c8 ; POLITOED
 	mon_cry CRY_CLEFFA,      $03b,  $0c8 ; HOPPIP
 	mon_cry CRY_CLEFFA,      $027,  $138 ; SKIPLOOM
@@ -206,31 +206,31 @@ PokemonCries::
 	mon_cry CRY_SLOWKING,    $104,  $200 ; SLOWKING
 	mon_cry CRY_VULPIX,      $061,  $060 ; VULPIII
 	mon_cry CRY_HOOTHOOT,    $162,  $100 ; UNOWN
-	mon_cry CRY_GIRAFARIG,   $27b,  $144 ; BIPULLA
-	mon_cry CRY_GIRAFARIG,   $041,  $200 ; GIRAFARIG
+	mon_cry CRY_TOGEPI,   	-$102,  $144 ; BIPULLA
+	mon_cry CRY_GIRAFARIG,   $041,  $150 ; GIRAFARIG
 	mon_cry CRY_BRUINUS, -$0e9,  $0f0 ; DISTURBAN
 	mon_cry CRY_GRIMER,      $080,  $0b0 ; SMUJJ
 	mon_cry CRY_PARAS,       $0c4,  $0b0 ; PARA
 	mon_cry CRY_PIDGEY,      $162,  $120 ; MIMMEO
 	mon_cry CRY_BRUINUS,  $0ef,  $0f7 ; STEELIX
 	mon_cry CRY_PARASPOR,   $112,  $0e8 ; SNUBBULL
-	mon_cry CRY_ANGORE,     -$0c6,  $140 ; QUAGSIRE
-	mon_cry CRY_PIDGEOTTO,  -$100,  $160 ; TRICULES
+	mon_cry CRY_ANGORE,      $07e,  $0af ; QUAGSIRE
+	mon_cry CRY_AMPHAROS,    $22b,  $144 ; TRICULES
 	mon_cry CRY_AMPHAROS,    $000,  $160 ; SCIZOR
 	mon_cry CRY_RATTATA,     $035,  $0e0 ; MOIBELLE
 	mon_cry CRY_RATTATA,     $065,  $180 ; BELLEDAM
-	mon_cry CRY_ANGORE,      $053,  $0af ; SNEASEL
+	mon_cry CRY_ANGORE,      $00f,  $0af ; SNEASEL
 	mon_cry CRY_SLOWKING,    $160,  $0e0 ; QWILFISH
 	mon_cry CRY_SLOWKING,    $07b,  $0f0 ; KAZAPPELIN
 	mon_cry CRY_MARILL,      $0f4,  $0c0 ; COINPUR
-	mon_cry CRY_SPEAROW,     $02d,  $0a0 ; LUXWAN
+	mon_cry CRY_SUNFLORA,     $000,  $100 ; LUXWAN
 	mon_cry CRY_LUXWAN,    $11e,  $140 ; STROMEN
 	mon_cry CRY_CUBBURN,   $049,  $080 ; PHANDARIN
 	mon_cry CRY_GROWLITHE,   $0a1,  $0e8 ; PUPPERON
 	mon_cry CRY_SUNFLORA,    $00d,  $100 ; REMORAID
 	mon_cry CRY_PALSSIO,    $000,  $180 ; OCTILLERY
 	mon_cry CRY_QWILFISH,   $002,  $06a ; DELIBIRD
-	mon_cry CRY_MANTINE,    -$0be,  $0f0 ; MANTINE
+	mon_cry CRY_SUNFLORA,   -$0be,  $0f0 ; MANTINE
 	mon_cry CRY_AMPHAROS,    $8a9,  $180 ; SKARMORY
 	mon_cry CRY_CUBBURN,   $039,  $140 ; HOUNDOUR
 	mon_cry CRY_PALSSIO,   -$10a,  $100 ; HOUNDOOM
