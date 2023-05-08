@@ -6,7 +6,7 @@
 	db WATER, WATER ; type
 	db 225 ; catch rate
 	db 106 ; base exp
-	db STARDUST, STARDUST ; items
+	db BERRY, STARDUST ; items
 	db GENDER_UNKNOWN ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch

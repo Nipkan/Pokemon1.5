@@ -1,12 +1,12 @@
 	db WEEPINBELL ; 070
 
-	db  65,  90,  50,  55,  85,  45
+	db  65,  90,  50,  55,  55,  85
 	;   hp  atk  def  spd  sat  sdf
 
 	db GRASS, POISON ; type
 	db 120 ; catch rate
 	db 151 ; base exp
-	db NO_ITEM, NO_ITEM ; items
+	db BERRY, MIRACLE_SEED ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch

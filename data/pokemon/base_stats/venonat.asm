@@ -1,12 +1,12 @@
 	db VENONAT ; 048
 
-	db  60,  55,  50,  45,  40,  55
+	db  60,  55,  50,  45,  40,  50
 	;   hp  atk  def  spd  sat  sdf
 
 	db BUG, POISON ; type
 	db 190 ; catch rate
 	db 75 ; base exp
-	db NO_ITEM, NO_ITEM ; items
+	db BERRY, SILVERPOWDER ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch

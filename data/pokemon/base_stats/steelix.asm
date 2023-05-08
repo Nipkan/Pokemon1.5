@@ -1,12 +1,12 @@
 	db STEELIX ; 208
 
-	db  75,  85, 200,  30,  55,  65
+	db  55,  65, 180,  90,  50,  80
 	;   hp  atk  def  spd  sat  sdf
 
 	db STEEL, GROUND ; type
 	db 25 ; catch rate
 	db 196 ; base exp
-	db NO_ITEM, NO_ITEM ; items
+	db APPLE, METAL_COAT ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 25 ; step cycles to hatch

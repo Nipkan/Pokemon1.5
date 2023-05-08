@@ -1,12 +1,12 @@
 	db SHELLDER ; 090
 
-	db  30,  65, 100,  40,  45,  25
+	db  30,  65, 100,  40,  45,  30
 	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, WATER ; type
 	db 190 ; catch rate
 	db 97 ; base exp
-	db PEARL, PEARL ; items
+	db BERRY, PEARL ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch

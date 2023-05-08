@@ -3,10 +3,10 @@
 	db 70,  60,  50,  55,  70,  60
 	;   hp  atk  def  spd  sat  sdf
 
-	db ICE, DARK ; type
+	db ICE, ICE ; type
 	db 65 ; catch rate
 	db 67 ; base exp
-	db NO_ITEM, NO_ITEM ; items
+	db BERRY, NEVERMELTICE ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 40 ; step cycles to hatch

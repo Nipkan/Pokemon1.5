@@ -3,10 +3,10 @@
 	db  65,  80, 140,  70,  40,  70
 	;   hp  atk  def  spd  sat  sdf
 
-	db STEEL, FLYING ; type
+	db FLYING, STEEL ; type
 	db 25 ; catch rate
-	db 168 ; base exp
-	db NO_ITEM, NO_ITEM ; items
+	db 180 ; base exp
+	db BERRY, SHARP_BEAK ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 25 ; step cycles to hatch

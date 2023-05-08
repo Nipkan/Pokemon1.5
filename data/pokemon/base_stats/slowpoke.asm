@@ -1,12 +1,12 @@
 	db SLOWPOKE ; 079
 
-	db  90,  65,  65,  15,  40,  40
+	db  90,  65,  65,  15,  40,  35
 	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, PSYCHIC_TYPE ; type
 	db 190 ; catch rate
 	db 99 ; base exp
-	db KINGS_ROCK, KINGS_ROCK ; items
+	db BERRY, SLOWPOKETAIL ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch

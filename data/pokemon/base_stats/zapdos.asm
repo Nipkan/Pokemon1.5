@@ -6,8 +6,8 @@
 	db ELECTRIC, FLYING ; type
 	db 3 ; catch rate
 	db 216 ; base exp
-	db BRIGHTPOWDER, BRIGHTPOWDER ; items
-	db GENDER_UNKNOWN ; gender ratio
+	db BERRY, BRIGHTPOWDER ; items
+	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 80 ; step cycles to hatch
 	db 5 ; unknown 2

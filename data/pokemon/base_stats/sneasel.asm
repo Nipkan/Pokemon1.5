@@ -1,12 +1,12 @@
 	db SNEASEL ; 215
 
-	db  55,  95,  55, 115,  35,  75
+	db  55,  95,  45, 115,  35,  45
 	;   hp  atk  def  spd  sat  sdf
 
 	db DARK, DARK ; type
 	db 60 ; catch rate
 	db 132 ; base exp
-	db QUICK_CLAW, QUICK_CLAW ; items
+	db BERRY, CONFUSE_CLAW ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch

@@ -1,13 +1,13 @@
 	db SUICUNE ; 245
 
-	db 100,  75, 115,  85,  90, 115
+	db 110,  75, 115,  75,  90, 115
 	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, WATER ; type
 	db 3 ; catch rate
 	db 215 ; base exp
-	db NO_ITEM, NO_ITEM ; items
-	db GENDER_UNKNOWN ; gender ratio
+	db BERRY, WATER_TAIL ; items
+	db GENDER_F12_5 ; gender ratio
 	db 100 ; unknown 1
 	db 80 ; step cycles to hatch
 	db 5 ; unknown 2

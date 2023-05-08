@@ -1,12 +1,12 @@
 	db UMBREON ; 197
 
-	db  95,  65, 110,  65,  60, 130
+	db  70,  130, 60,  65,  65, 95
 	;   hp  atk  def  spd  sat  sdf
 
 	db POISON, POISON ; type
 	db 45 ; catch rate
 	db 197 ; base exp
-	db NO_ITEM, NO_ITEM ; items
+	db APPLE, PRETTY_TAIL ; items
 	db GENDER_F12_5 ; gender ratio
 	db 100 ; unknown 1
 	db 35 ; step cycles to hatch

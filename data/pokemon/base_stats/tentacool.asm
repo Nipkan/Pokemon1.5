@@ -1,12 +1,12 @@
 	db TENTACOOL ; 072
 
-	db  40,  40,  35,  70,  50, 100
+	db  40,  40,  35,  70,  60, 100
 	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, POISON ; type
 	db 190 ; catch rate
 	db 105 ; base exp
-	db NO_ITEM, NO_ITEM ; items
+	db BERRY, POISON_BARB ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch
