@@ -12,7 +12,8 @@ MAX_STAT_LEVEL EQU 13
 
 ; minimum damage before type effectiveness
 MIN_NEUTRAL_DAMAGE EQU 2
-
+;There was also a MAX_NEUTRAL_DAMAGE of 999.
+MAX_NEUTRAL_DAMAGE EQU 999
 ; turns that sleep lasts
 REST_SLEEP_TURNS EQU 2
 TREEMON_SLEEP_TURNS EQU 7
