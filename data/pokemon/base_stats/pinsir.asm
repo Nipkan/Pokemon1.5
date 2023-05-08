@@ -1,12 +1,12 @@
 	db PINSIR ; 127
 
-	db  65, 125, 100,  85,  55,  70
+	db  65, 125, 100,  85,  55,  75
 	;   hp  atk  def  spd  sat  sdf
 
 	db BUG, BUG ; type
 	db 45 ; catch rate
 	db 200 ; base exp
-	db NO_ITEM, NO_ITEM ; items
+	db BERRY, SHARP_HORNS ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 25 ; step cycles to hatch

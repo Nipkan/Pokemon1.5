@@ -1,13 +1,13 @@
 	db RAIKOU ; 243
 
-	db  90,  85,  75, 115, 115, 100
+	db  90,  85,  85, 115, 115,  90
 	;   hp  atk  def  spd  sat  sdf
 
 	db ELECTRIC, ELECTRIC ; type
 	db 3 ; catch rate
 	db 216 ; base exp
-	db NO_ITEM, NO_ITEM ; items
-	db GENDER_UNKNOWN ; gender ratio
+	db BERRY, THUNDER_TAIL ; items
+	db GENDER_F12_5 ; gender ratio
 	db 100 ; unknown 1
 	db 80 ; step cycles to hatch
 	db 5 ; unknown 2

@@ -6,7 +6,7 @@
 	db WATER, ELECTRIC ; type
 	db 35 ; catch rate
 	db 130 ; base exp
-	db NO_ITEM, NO_ITEM ; items
+	db APPLE, POISON_BARB ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch

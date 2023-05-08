@@ -1,12 +1,14 @@
 	db PRESSIO ; 159
 
-	db  75,  60,  70,  45,  77,  77
+;	db  55,  55,  60,  55,  55,  50
+	db  65,  60,  77,  50,  78,  70
+;	db  75,  60,  70,  45,  77,  77
 	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, WATER ; type
 	db 45 ; catch rate
 	db 143 ; base exp
-	db NO_ITEM, NO_ITEM ; items
+	db BERRY, NO_ITEM ; items
 	db GENDER_F12_5 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch

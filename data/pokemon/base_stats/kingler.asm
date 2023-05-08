@@ -1,12 +1,12 @@
 	db KINGLER ; 099
 
-	db  55, 130, 115,  75,  50,  50
+	db  55, 130, 115,  75,  65,  50
 	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, WATER ; type
 	db 60 ; catch rate
 	db 206 ; base exp
-	db NO_ITEM, NO_ITEM ; items
+	db APPLE, STEEL_SHELL ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch

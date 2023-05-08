@@ -1,12 +1,12 @@
 	db ODDISH ; 043
 
-	db  45,  50,  55,  30,  75,  65
+	db  45,  50,  55,  30,  75,  70
 	;   hp  atk  def  spd  sat  sdf
 
 	db GRASS, POISON ; type
 	db 255 ; catch rate
 	db 78 ; base exp
-	db BERRY_JUICE, BERRY_JUICE ; items
+	db BERRY, BERRY_JUICE ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch

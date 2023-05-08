@@ -1,12 +1,12 @@
 	db QWILFISH ; 216
 
-	db  65,  85,  75,  85,  55,  55
+	db  55,  95,  45,  75,  85,  45
 	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, WATER ; type
 	db 45 ; catch rate
-	db 100 ; base exp
-	db NO_ITEM, NO_ITEM ; items
+	db 166 ; base exp
+	db BERRY, POISON_BARB ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch

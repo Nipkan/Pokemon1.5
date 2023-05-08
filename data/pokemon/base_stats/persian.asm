@@ -1,12 +1,12 @@
 	db PERSIAN ; 053
 
-	db  65,  70,  60, 115,  65,  65
+	db  65,  70,  60, 115,  65,  85
 	;   hp  atk  def  spd  sat  sdf
 
 	db NORMAL, NORMAL ; type
 	db 90 ; catch rate
 	db 148 ; base exp
-	db NO_ITEM, NO_ITEM ; items
+	db APPLE, AMULET_COIN ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch

@@ -3,10 +3,10 @@
 	db  88,  58,  58,  88,  58,  58
 	;   hp  atk  def  spd  sat  sdf
 
-	db STEEL, STEEL ; type
+	db NORMAL, STEEL ; type
 	db 35 ; catch rate
 	db 70 ; base exp
-	db NO_ITEM, NO_ITEM ; items
+	db APPLE, METAL_COAT ; items
 	db GENDER_UNKNOWN ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch

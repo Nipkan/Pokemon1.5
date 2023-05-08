@@ -1,12 +1,12 @@
 	db POLIWHIRL ; 061
 
-	db  65,  65,  65,  90,  50,  50
+	db  65,  65,  65,  90,  50,  65
 	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, WATER ; type
 	db 120 ; catch rate
 	db 131 ; base exp
-	db NO_ITEM, NO_ITEM ; items
+	db BERRY, NO_ITEM ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch

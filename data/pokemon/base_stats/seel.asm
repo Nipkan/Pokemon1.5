@@ -1,12 +1,12 @@
 	db SEEL ; 086
 
-	db  65,  45,  55,  45,  45,  70
+	db  65,  45,  55,  45,  55,  70
 	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, WATER ; type
 	db 190 ; catch rate
 	db 100 ; base exp
-	db WATER_TAIL, WATER_TAIL; items
+	db BERRY, NEVERMELTICE; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch

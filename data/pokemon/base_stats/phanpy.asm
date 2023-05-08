@@ -1,12 +1,12 @@
 	db PHANPY ; 231
 
-	db  90,  60,  60,  40,  40,  40
+	db  60,  80,  70,  35,  30,  30
 	;   hp  atk  def  spd  sat  sdf
 
 	db GROUND, GROUND ; type
 	db 120 ; catch rate
-	db 124 ; base exp
-	db NO_ITEM, NO_ITEM ; items
+	db 135 ; base exp
+	db BERRY, SHARP_HORNS ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch

@@ -5,8 +5,8 @@
 
 	db WATER, FLYING ; type
 	db 25 ; catch rate
-	db 168 ; base exp
-	db WATER_TAIL, WATER_TAIL ; items
+	db 178 ; base exp
+	db BERRY, WATER_TAIL ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 25 ; step cycles to hatch

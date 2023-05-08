@@ -1,12 +1,12 @@
 	db LICKITUNG ; 108
 
-	db  90,  55,  75,  30,  60,  75
+	db  90,  55,  75,  30,  60,  90
 	;   hp  atk  def  spd  sat  sdf
 
 	db NORMAL, NORMAL ; type
 	db 45 ; catch rate
 	db 127 ; base exp
-	db NO_ITEM, NO_ITEM ; items
+	db BERRY, LONG_TONGUE ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch

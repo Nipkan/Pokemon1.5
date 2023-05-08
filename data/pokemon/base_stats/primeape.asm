@@ -1,12 +1,12 @@
 	db PRIMEAPE ; 057
 
-	db  65, 105,  60,  95,  60,  70
+	db  65, 105,  60,  95,  60,  80
 	;   hp  atk  def  spd  sat  sdf
 
 	db FIGHTING, FIGHTING ; type
 	db 75 ; catch rate
 	db 149 ; base exp
-	db NO_ITEM, NO_ITEM ; items
+	db BLACKBELT_I, NO_ITEM ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch

@@ -1,12 +1,12 @@
 	db SANDSLASH ; 028
 
-	db  75, 100, 110,  65,  45,  55
+	db  75, 100, 110,  65,  55,  75
 	;   hp  atk  def  spd  sat  sdf
 
 	db GROUND, GROUND ; type
 	db 90 ; catch rate
 	db 163 ; base exp
-	db NO_ITEM, NO_ITEM ; items
+	db APPLE, CONFUSE_CLAW ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch

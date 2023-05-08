@@ -1,12 +1,12 @@
 	db MACHOP ; 066
 
-	db  70,  80,  50,  35,  35,  35
+	db  70,  80,  50,  35,  35,  40
 	;   hp  atk  def  spd  sat  sdf
 
 	db FIGHTING, FIGHTING ; type
 	db 180 ; catch rate
 	db 88 ; base exp
-	db BRICK_PIECE, BRICK_PIECE ; items
+	db BERRY, BRICK_PIECE ; items
 	db GENDER_F25 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch

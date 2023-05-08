@@ -1,12 +1,12 @@
 	db LAPRAS ; 131
 
-	db 130,  85,  80,  60,  85,  95
+	db 130,  85,  80,  60,  95, 105
 	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, ICE ; type
 	db 45 ; catch rate
 	db 219 ; base exp
-	db NO_ITEM, NO_ITEM ; items
+	db BERRY, WISDOM_ORB ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 40 ; step cycles to hatch

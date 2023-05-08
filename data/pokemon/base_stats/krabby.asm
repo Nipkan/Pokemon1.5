@@ -1,12 +1,12 @@
 	db KRABBY ; 098
 
-	db  30, 105,  90,  50,  25,  25
+	db  30, 105,  90,  50,  35,  25
 	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, WATER ; type
 	db 225 ; catch rate
 	db 115 ; base exp
-	db SILVER_LEAF, SILVER_LEAF ; items
+	db SILVER_LEAF, STEEL_SHELL ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch
