@@ -3,8 +3,8 @@ BattleCommand_LeechSeed:
 	ld a, [wAttackMissed]
 	and a
 	jr nz, .evaded
-	call CheckSubstituteOpp
-	jr nz, .evaded
+;	call CheckSubstituteOpp // Check added after 7/14/1999.
+;	jr nz, .evaded
 
 	ld de, wEnemyMonType1
 	ldh a, [hBattleTurn]

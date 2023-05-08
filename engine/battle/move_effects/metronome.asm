@@ -29,10 +29,10 @@ BattleCommand_Metronome:
 	pop bc
 	jr c, .GetMove
 
-; No moves the user already has.
-	ld a, b
-	call CheckUserMove
-	jr z, .GetMove
+;; No moves the user already has. // Check wasn't added until after 8/17/1999.
+;	ld a, b
+;	call CheckUserMove
+;	jr z, .GetMove
 
 	ld a, BATTLE_VARS_MOVE
 	call GetBattleVarAddr

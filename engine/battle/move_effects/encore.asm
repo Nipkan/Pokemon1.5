@@ -13,8 +13,8 @@ BattleCommand_Encore:
 	call GetBattleVar
 	and a
 	jp z, .failed
-	cp STRUGGLE
-	jp z, .failed
+	;cp STRUGGLE // Check was added some time after 7/14/1999.
+	;jp z, .failed
 	cp ENCORE
 	jp z, .failed
 	cp MIRROR_MOVE

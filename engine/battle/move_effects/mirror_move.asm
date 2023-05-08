@@ -11,8 +11,8 @@ BattleCommand_MirrorMove:
 	and a
 	jr z, .failed
 
-	call CheckUserMove
-	jr nz, .use
+;	call CheckUserMove // Check added after 7/14/1999.
+;	jr nz, .use
 
 .failed
 	call AnimateFailedMove

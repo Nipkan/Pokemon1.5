@@ -75,7 +75,8 @@ BattleCommand_Conversion:
 	ld a, [hl]
 	cp -1
 	jr z, .loop3
-	cp CURSE_TYPE
+	;cp CURSE_TYPE // Check didn't exist until some time after 7/14/1999. Enjoy your niche ??? Conversion strats.
+	cp BIRD ;
 	jr z, .loop3
 	ld a, [de]
 	cp [hl]

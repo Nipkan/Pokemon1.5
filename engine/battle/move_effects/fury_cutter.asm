@@ -14,12 +14,12 @@ BattleCommand_FuryCutter:
 
 	inc [hl]
 
-; Damage capped at 5 turns' worth (16x).
-	ld a, [hl]
-	ld b, a
-	cp 6
-	jr c, .checkdouble
-	ld b, 5
+;; Damage capped at 5 turns' worth (16x). // This part was not added until sometime after 7/14/1999.
+;	ld a, [hl]
+;	ld b, a
+;	cp 6
+;	jr c, .checkdouble
+;	ld b, 5
 
 .checkdouble
 	dec b

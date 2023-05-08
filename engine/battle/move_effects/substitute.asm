@@ -44,13 +44,13 @@ BattleCommand_Substitute:
 	call GetBattleVarAddr
 	set SUBSTATUS_SUBSTITUTE, [hl]
 
-	ld hl, wPlayerWrapCount
-	ld de, wPlayerTrappingMove
-	ldh a, [hBattleTurn]
-	and a
-	jr z, .player
-	ld hl, wEnemyWrapCount
-	ld de, wEnemyTrappingMove
+;	ld hl, wPlayerWrapCount // This part didn't exist till after 7/14/1999.
+;	ld de, wPlayerTrappingMove
+;	ldh a, [hBattleTurn]
+;	and a
+;	jr z, .player
+;	ld hl, wEnemyWrapCount
+;	ld de, wEnemyTrappingMove
 .player
 
 	xor a
