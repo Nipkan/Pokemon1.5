@@ -2,9 +2,9 @@
 	dw 511, 2180 ; height, weight
 
 	db   "The heat from its"
-	next "body causes the"
-	next "air around it to"
+	next "body permeates the"
+	next "air around it."
 
-	page "become incredibly"
-	next "hot. Can inflict"
-	next "burns by vicinity.@"
+	page "When provoked, it"
+	next "can cause burns"
+	next "through proximity.@"

@@ -1,10 +1,10 @@
 	db "MAJESTIC@" ; species name
 	dw 702, 2170 ; height, weight
 
-	db   "Because it has a"
+	db   "Despite having a"
 	next "massive body, it"
-	next "is nimble in water"
+	next "remains nimble"
 
-	page "but bulky on land."
-	next "Can easily hold"
-	next "its ground.@"
+	page "even on land. It"
+	next "almost never loses"
+	next "its balance.@"

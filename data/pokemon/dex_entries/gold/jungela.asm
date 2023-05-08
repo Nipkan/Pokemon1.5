@@ -1,10 +1,10 @@
 	db "JUNGLE@" ; species name
 	dw 504, 1220 ; height, weight
 
-	db   "Its vision is very"
-	next "poor. However, its"
-	next "other senses are"
+	db   "Though its vision"
+	next "is poor, its"
+	next "heightened senses"
 
-	page "hightened and it"
-	next "uses its vines to"
-	next "observe around it.@"
+	page "of touch and sound"
+	next "let it map out its"
+	next "surroundings.@"

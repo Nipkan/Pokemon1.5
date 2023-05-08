@@ -1,10 +1,10 @@
 	db "STAGBEETLE@" ; species name
-	dw 503, 1540 ; height, weight
+	dw 511, 1764 ; height, weight
 
-	db   "The pincers on its"
-	next "head allow it a"
-	next "firm grip to be"
+	db   "It pinches its"
+	next "opponents and"
+	next "flips them over."
 
-	page "able to inflict"
-	next "damage with the"
-	next "horn in between.@"
+	page "Its elongated"
+	next "horns contain"
+	next "steel components.@"

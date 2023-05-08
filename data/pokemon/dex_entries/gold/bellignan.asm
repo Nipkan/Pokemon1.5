@@ -1,10 +1,10 @@
-	db "FLYCATCHER@" ; species name
-	dw 403, 270 ; height, weight
+	db "SPROUT@" ; species name
+	dw 407, 157 ; height, weight
 
-	db   "A surprisingly"
-	next "speedy plant. Able"
-	next "to move on the"
-
-	page "ground much more"
-	next "quickly than its"
-	next "previous forms.@"
+	db   "If too few bugs"
+	next "are around, it can"
+	next "survive by absorb-"
+	
+	page "ing nutrients from"
+	next "the ground via its"
+	next "root-like feet.@"

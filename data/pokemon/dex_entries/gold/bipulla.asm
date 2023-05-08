@@ -1,10 +1,10 @@
-	db "DUO GROWTH@" ; species name
-	dw 108, 30 ; height, weight
+	db "SPIRAL@" ; species name
+	dw 303, 4 ; height, weight
 
-	db   "This #MON is"
-	next "a living embryo"
-	next "that has split"
+	db   "Both heads are"
+	next "constantly swirl-"
+	next "ing around. For"
 
-	page "into two separate"
-	next "#MON with two"
-	next "personalities.@"
+	page "unknown reasons,"
+	next "they always move"
+	next "clockwise.@"

@@ -1,4 +1,4 @@
-	db "LOUDCAT@" ; species name
+	db "LOUD CAT@" ; species name
 	dw 207, 410 ; height, weight
 
 	db   "The ring from its"

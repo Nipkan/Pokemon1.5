@@ -1,10 +1,10 @@
 	db "PUPPY@" ; species name
 	dw 111, 300 ; height, weight
 
-	db   "Is territorial"
-	next "but has not yet"
-	next "developed the"
+	db   "It is territorial,"
+	next "but isn't strong"
+	next "enough to hold its"
 
-	page "strength to defend"
-	next "itself fully. Is"
-	next "also affectionate.@"
+	page "own in battle. It"
+	next "is fast to imprint"
+	next "on trainers.@"

@@ -1,10 +1,10 @@
 	db "WILD DUCK@" ; species name
-	dw 401, 710 ; height, weight
+	dw 400, 595 ; height, weight
 
-	db   "Very territorial."
-	next "Will defend its"
-	next "hatchlings if it"
+	db   "Seldom seen in the"
+	next "wild. Recent stud-"
+	next "ies have found"
 
-	page "has a slight sense"
-	next "of danger from its"
-	next "surroundings.@"
+	page "that the object it"
+	next "holds is a spring"
+	next "onion flower.@"

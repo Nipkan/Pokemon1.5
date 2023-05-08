@@ -1,10 +1,10 @@
 	db "LOUDCAT@" ; species name
 	dw 109, 220 ; height, weight
 
-	db   "Is very playful"
-	next "and is constantly"
-	next "making noise in"
+	db   "It is playful and"
+	next "constantly making"
+	next "noise in order to"
 
-	page "order to be the"
-	next "center of"
-	next "attention.@"
+	page "be the center of"
+	next "attention. They"
+	next "are popular pets.@"

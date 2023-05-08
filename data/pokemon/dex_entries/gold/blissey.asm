@@ -3,8 +3,8 @@
 
 	db   "Biting into one"
 	next "of the delicious"
-	next "eggs that BLISSEY"
+	next "eggs that JOICEY"
 
-	page "provides will make"
+	page "carries will make"
 	next "everyone around"
 	next "smile with joy.@"

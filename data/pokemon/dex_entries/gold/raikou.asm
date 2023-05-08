@@ -1,10 +1,10 @@
 	db "THUNDER@" ; species name
 	dw 603, 3920 ; height, weight
 
-	db   "This rough #MON"
-	next "stores energy"
-	next "inside its body,"
+	db   "This #MON"
+	next "rushes across the"
+	next "earth. Its path"
 
-	page "then sweeps across"
-	next "the land, shooting"
-	next "off electricity.@"
+	page "is marked by the"
+	next "thundering clouds"
+	next "it leaves behind.@"

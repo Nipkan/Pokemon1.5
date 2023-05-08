@@ -1,10 +1,10 @@
 	db "HAUNTED@" ; species name
-	dw 106, 20 ; height, weight
+	dw 204, 22 ; height, weight
 
-	db   "When a wandering"
-	next "spirit inhabits"
-	next "household objects,"
+	db   "It lives quietly"
+	next "in places no one"
+	next "goes near. Rumor"
 
-	page "it comes together"
-	next "and animates into"
-	next "a STROMEN.@"
+	page "has it that call-"
+	next "ing out its name"
+	next "will curse you.@"

@@ -1,10 +1,10 @@
 	db "BARRIER@" ; species name
 	dw 205, 430 ; height, weight
 
-	db   "Is able to stop"
-	next "foes in their"
-	next "tracks by using"
+	db   "It distracts its"
+	next "foes with its"
+	next "graceful movements"
 
-	page "its mind to fool"
-	next "them into losing"
-	next "their orientation.@"
+	page "to disorient them"
+	next "using the power"
+	next "of suggestion.@"

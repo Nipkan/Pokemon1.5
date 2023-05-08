@@ -5,6 +5,6 @@
 	next "strongest muscle"
 	next "in its body."
 
-	page "Is able to knock"
-	next "foes out with the"
-	next "force of a lick.@"
+	page "It can knock out"
+	next "its foes simply"
+	next "by licking them.@"

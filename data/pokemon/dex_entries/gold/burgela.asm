@@ -5,6 +5,6 @@
 	next "hanging from its"
 	next "head often obscure"
 
-	page "its vision. Is"
+	page "its vision. It is"
 	next "able to camouflage"
 	next "itself in shrubs.@"

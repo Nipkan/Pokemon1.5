@@ -1,10 +1,10 @@
 	db "AURORA@" ; species name
 	dw 607, 4120 ; height, weight
 
-	db   "This divine"
-	next "#MON blows"
-	next "around the world,"
+	db   "This #MON"
+	next "rushes across the"
+	next "earth. Its touch"
 
-	page "always in search"
-	next "of a pure"
-	next "reservoir.@"
+	page "is said to be"
+	next "enough to purify"
+	next "any body of water.@"
