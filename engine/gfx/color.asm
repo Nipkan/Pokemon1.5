@@ -1,16 +1,52 @@
 INCLUDE "engine/gfx/sgb_layouts.asm"
 
-SHINY_ATK_BIT EQU 5
+SHINY_ATK_BIT EQU 10
 SHINY_DEF_VAL EQU 10
 SHINY_SPD_VAL EQU 10
 SHINY_SPC_VAL EQU 10
 
 CheckShininess:
-; Check if a mon is shiny by DVs at bc.
-; Return carry if shiny.
+; This is the Unused_CheckShininess function from the final game.
+; Return carry if the DVs at hl are all 10 or higher.
 
 	ld l, c
 	ld h, b
+;this seems necessary? idk what im doing
+; Attack
+	ld a, [hl]
+	cp 10 << 4
+	jr c, .NotShiny
+
+; Defense
+	ld a, [hli]
+	and $f
+	cp 10
+	jr c, .NotShiny
+
+; Speed
+	ld a, [hl]
+	cp 10 << 4
+	jr c, .NotShiny
+
+; Special
+	ld a, [hl]
+	and $f
+	cp 10
+	jr c, .NotShiny
+
+.Shiny:
+	scf
+	ret
+
+.NotShiny:
+	and a
+	ret
+	
+Unused_CheckShininess:
+; Check if a mon is shiny by DVs at bc.
+;This is the CheckShininess function from the final game.
+; Return carry if shiny.
+
 
 ; Attack
 	ld a, [hl]
@@ -43,38 +79,6 @@ CheckShininess:
 	and a
 	ret
 
-Unused_CheckShininess:
-; Return carry if the DVs at hl are all 10 or higher.
-
-; Attack
-	ld a, [hl]
-	cp 10 << 4
-	jr c, .NotShiny
-
-; Defense
-	ld a, [hli]
-	and $f
-	cp 10
-	jr c, .NotShiny
-
-; Speed
-	ld a, [hl]
-	cp 10 << 4
-	jr c, .NotShiny
-
-; Special
-	ld a, [hl]
-	and $f
-	cp 10
-	jr c, .NotShiny
-
-.Shiny:
-	scf
-	ret
-
-.NotShiny:
-	and a
-	ret
 
 SGB_ApplyCreditsPals::
 	push de
