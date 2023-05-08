@@ -1675,7 +1675,7 @@ BattleCommand_CheckHit:
 
 .LockOn:
 ; Return nz if we are locked-on and aren't trying to use Earthquake,
-; Fissure or Magnitude on a monster that is flying.
+; Fissure or Magnitude on a monster that is flying. // Did not work on flying enemies as of 7/14/1999.
 	ld a, BATTLE_VARS_SUBSTATUS5_OPP
 	call GetBattleVarAddr
 	bit SUBSTATUS_LOCK_ON, [hl]
@@ -1687,15 +1687,20 @@ BattleCommand_CheckHit:
 	bit SUBSTATUS_FLYING, a
 	jr z, .LockedOn
 
-	ld a, BATTLE_VARS_MOVE_ANIM
-	call GetBattleVar
-
-	cp EARTHQUAKE
-	ret z
-	cp FISSURE
-	ret z
-	cp MAGNITUDE
-	ret z
+; // I don't know if this works. Here's hoping...
+	;ld a, 0
+	;and a
+	ret 
+	
+;	ld a, BATTLE_VARS_MOVE_ANIM
+;	call GetBattleVar
+;
+;	cp EARTHQUAKE
+;	ret z
+;	cp FISSURE
+;	ret z
+;	cp MAGNITUDE
+;	ret z
 
 .LockedOn:
 	ld a, 1
@@ -1751,9 +1756,9 @@ BattleCommand_CheckHit:
 	cp EARTHQUAKE
 	ret z
 	cp FISSURE
-	ret z
-	cp MAGNITUDE
-	ret
+	ret ;z
+	;cp MAGNITUDE // Didn't hit digging opponents as of 7/14/1999.
+	;ret
 
 .ThunderRain:
 ; Return z if the current move always hits in rain, and it is raining.
@@ -1795,12 +1800,12 @@ BattleCommand_CheckHit:
 	cp b
 	jr c, .skip_foresight_check
 
-	; if the target's evasion is greater than the user's accuracy,
-	; check the target's foresight status
-	ld a, BATTLE_VARS_SUBSTATUS1_OPP
-	call GetBattleVar
-	bit SUBSTATUS_IDENTIFIED, a
-	ret nz
+;	; if the target's evasion is greater than the user's accuracy,
+;	; check the target's foresight status // This effect did not exist until after 7/14/1999.
+;	ld a, BATTLE_VARS_SUBSTATUS1_OPP
+;	call GetBattleVar
+;	bit SUBSTATUS_IDENTIFIED, a
+;	ret nz
 
 .skip_foresight_check
 	; subtract evasion from 14
@@ -2621,6 +2626,7 @@ PlayerAttackDamage:
 	ld a, [hli]
 	ld b, a
 	ld c, [hl]
+	call EnergyWallBoost
 
 	ld a, [wEnemyScreens]
 	bit SCREENS_LIGHT_SCREEN, a
@@ -2769,6 +2775,18 @@ LightBallBoost:
 	pop bc
 	ret
 
+EnergyWallBoost:
+; Sets up StandardItemBoost to check if it's an EGG, which it shouldn't be. If it is, nothing happens. I'm not familiar enough with stack management to remove all the redundancy here.
+	push bc
+	push de
+	ld b, EGG
+	ld c, EGG
+	ld d, ENERGY_WALL
+	call StandardItemBoost
+	pop de
+	pop bc
+	ret
+
 SpeciesItemBoost:
 ; Return in hl the stat value at hl.
 
@@ -2808,6 +2826,47 @@ SpeciesItemBoost:
 	sla l
 	rl h
 	ret
+
+StandardItemBoost:
+; Return in hl the stat value at hl.
+
+; If the attacking monster is species b or c and
+; it's holding item d, double it.
+
+	ld a, [hli]
+	ld l, [hl]
+	ld h, a
+
+	push hl
+	ld a, MON_SPECIES
+	call BattlePartyAttr
+
+	ldh a, [hBattleTurn]
+	and a
+	ld a, [hl]
+	jr z, .CompareSpecies
+	ld a, [wTempEnemyMonSpecies]
+.CompareSpecies:
+	pop hl
+
+;	cp b
+;	jr nz, .GetItemHeldEffect
+;	cp c
+;	ret z
+
+.GetItemHeldEffect:
+	push hl
+	call GetUserItem
+	ld a, [hl]
+	pop hl
+	cp d
+	ret nz
+
+; Double the stat
+	sla l
+	rl h
+	ret
+
 
 EnemyAttackDamage:
 	call ResetDamage
@@ -2852,6 +2911,7 @@ EnemyAttackDamage:
 	ld a, [hli]
 	ld b, a
 	ld c, [hl]
+	call EnergyWallBoost
 
 	ld a, [wPlayerScreens]
 	bit SCREENS_LIGHT_SCREEN, a
@@ -5742,16 +5802,19 @@ BattleCommand_Recoil:
 .got_hp
 	ld a, BATTLE_VARS_MOVE_ANIM
 	call GetBattleVar
-	ld d, a
-; get 1/4 damage or 1 HP, whichever is higher
+	ld d, a ; get 1/4 damage or 1 HP, whichever is higher
 	ld a, [wCurDamage]
 	ld b, a
 	ld a, [wCurDamage + 1]
 	ld c, a
 	srl b
 	rr c
+	ld a, d
+	cp STRUGGLE ; struggle deals 50% recoil damage
+	jr z, .gotRecoilDamage
 	srl b
 	rr c
+.gotRecoilDamage
 	ld a, b
 	or c
 	jr nz, .min_damage

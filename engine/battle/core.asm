@@ -93,6 +93,7 @@ DoBattle:
 	call EmptyBattleTextbox
 	call LoadTilemapToTempTilemap
 	call SetPlayerTurn
+	call ConfuseClawDamage
 	call SpikesDamage
 	ld a, [wLinkMode]
 	and a
@@ -107,6 +108,7 @@ DoBattle:
 	call BreakAttraction
 	call EnemySwitch
 	call SetEnemyTurn
+	call ConfuseClawDamage
 	call SpikesDamage
 
 .not_linked_2
@@ -157,6 +159,7 @@ BattleTurn:
 	ld [wCurDamage + 1], a
 
 	call HandleBerserkGene
+	call HandleStatBoostingHeldItems
 	call UpdateBattleMonInParty
 	farcall AIChooseMove
 	call CheckPlayerLockedIn
@@ -243,7 +246,6 @@ HandleBetweenTurnEffects:
 	call HandleDefrost
 	call HandleSafeguard
 	call HandleScreens
-	call HandleStatBoostingHeldItems
 	call HandleHealingItems
 	call UpdateBattleMonInParty
 	call LoadTilemapToTempTilemap
@@ -340,12 +342,7 @@ HandleBerserkGene:
 	ld l, e
 	ld a, b
 	call GetPartyLocation
-	xor a
-	ld [hl], a
-	ld a, BATTLE_VARS_SUBSTATUS3
-	call GetBattleVarAddr
 	push af
-	set SUBSTATUS_CONFUSED, [hl]
 	ld a, BATTLE_VARS_MOVE_ANIM
 	call GetBattleVarAddr
 	push hl
@@ -354,25 +351,574 @@ HandleBerserkGene:
 	ld [hl], a
 	ld [wAttackMissed], a
 	ld [wEffectFailed], a
-	farcall BattleCommand_AttackUp2
+	farcall BattleCommand_AllStatsUp
 	pop af
 	pop hl
-	ld [hl], a
 	call GetItemName
 	ld hl, BattleText_UsersStringBuffer1Activated
 	call StdBattleTextbox
 	callfar BattleCommand_StatUpMessage
 	pop af
-	bit SUBSTATUS_CONFUSED, a
-	ret nz
 	xor a
 	ld [wNumHits], a
-	ld de, ANIM_CONFUSED
-	call Call_PlayBattleAnim_OnlyIfVisible
 	call SwitchTurnCore
-	ld hl, BecameConfusedText
 	jp StdBattleTextbox
 
+;
+;	ldh a, [hSerialConnectionStatus]
+;	cp USING_EXTERNAL_CLOCK
+;	jr z, .reverse2
+;	call .player2
+;	jr .enemy2
+;
+;.reverse2
+;	call .enemy2
+;	; fallthrough
+;
+;.player2
+;	call SetPlayerTurn
+;	ld de, wPartyMon1Item
+;	ld a, [wCurBattleMon]
+;	ld b, a
+;	jr .go2
+;
+;.enemy2
+;	call SetEnemyTurn
+;	ld de, wOTPartyMon1Item
+;	ld a, [wCurOTMon]
+;	ld b, a
+;	; fallthrough
+;
+;.go2
+;	push de
+;	push bc
+;	callfar GetUserItem
+;	ld a, [hl]
+;	ld [wNamedObjectIndexBuffer], a
+;	sub SHARP_HORNS
+;	pop bc
+;	pop de
+;	ret nz
+;
+;	ld [hl], a
+;
+;	ld h, d
+;	ld l, e
+;	ld a, b
+;	call GetPartyLocation
+;;	ld a, BATTLE_VARS_SUBSTATUS3
+;;	call GetBattleVarAddr
+;	push af
+;;	set SUBSTATUS_CONFUSED, [hl]
+;	ld a, BATTLE_VARS_MOVE_ANIM
+;	call GetBattleVarAddr
+;	push hl
+;	push af
+;	xor a
+;	ld [hl], a
+;	ld [wAttackMissed], a
+;	ld [wEffectFailed], a
+;	farcall BattleCommand_AttackUp
+;	pop af
+;	pop hl
+;	ld [hl], a
+;	call GetItemName
+;	ld hl, BattleText_UsersStringBuffer1Activated
+;	call StdBattleTextbox
+;	callfar BattleCommand_StatUpMessage
+;	pop af
+;;	bit SUBSTATUS_CONFUSED, a
+;;	ret nz
+;	xor a
+;	ld [wNumHits], a
+;;	call Call_PlayBattleAnim_OnlyIfVisible
+;	call SwitchTurnCore
+;;	ld hl, BecameConfusedText
+;;	jp StdBattleTextbox
+;
+;	
+;;HandleSteelShell:
+;	ldh a, [hSerialConnectionStatus]
+;	cp USING_EXTERNAL_CLOCK
+;	jr z, .reverse3
+;
+;	call .player3
+;	jr .enemy3
+;
+;.reverse3
+;	call .enemy3
+;	; fallthrough
+;
+;.player3
+;	call SetPlayerTurn
+;	ld de, wPartyMon1Item
+;	ld a, [wCurBattleMon]
+;	ld b, a
+;	jr .go3
+;
+;.enemy3
+;	call SetEnemyTurn
+;	ld de, wOTPartyMon1Item
+;	ld a, [wCurOTMon]
+;	ld b, a
+;	; fallthrough
+;
+;.go3
+;	push de
+;;	push bc
+;	callfar GetUserItem
+;	ld a, [hl]
+;	ld [wNamedObjectIndexBuffer], a
+;	sub STEEL_SHELL
+;	pop bc
+;	pop de
+;	ret nz
+;
+;	ld [hl], a
+;
+;	ld h, d
+;	ld l, e
+;	ld a, b
+;	call GetPartyLocation
+;;	ld a, BATTLE_VARS_SUBSTATUS3
+;;	call GetBattleVarAddr
+;	push af
+;;	set SUBSTATUS_CONFUSED, [hl]
+;	ld a, BATTLE_VARS_MOVE_ANIM
+;	call GetBattleVarAddr
+;	push hl
+;	push af
+;	xor a
+;	ld [hl], a
+;	ld [wAttackMissed], a
+;	ld [wEffectFailed], a
+;	farcall BattleCommand_DefenseUp
+;	pop af
+;	pop hl
+;	ld [hl], a
+;	call GetItemName
+;	ld hl, BattleText_UsersStringBuffer1Activated
+;	call StdBattleTextbox
+;	callfar BattleCommand_StatUpMessage
+;	pop af
+;;	bit SUBSTATUS_CONFUSED, a
+;;	ret nz
+;	xor a
+;	ld [wNumHits], a
+;;	call Call_PlayBattleAnim_OnlyIfVisible
+;	call SwitchTurnCore
+;;	ld hl, BecameConfusedText
+;;	jp StdBattleTextbox
+;
+;;HandleFireWing:
+;	ldh a, [hSerialConnectionStatus]
+;	cp USING_EXTERNAL_CLOCK
+;	jr z, .reverse4
+;
+;	call .player4
+;	jr .enemy4
+;
+;.reverse4
+;	call .enemy4
+;	; fallthrough
+;
+;.player4
+;	call SetPlayerTurn
+;	ld de, wPartyMon1Item
+;	ld a, [wCurBattleMon]
+;	ld b, a
+;	jr .go4
+;
+;.enemy4
+;	call SetEnemyTurn
+;	ld de, wOTPartyMon1Item
+;	ld a, [wCurOTMon]
+;	ld b, a
+;	; fallthrough
+;
+;.go4
+;	push de
+;	push bc
+;	callfar GetUserItem
+;	ld a, [hl]
+;	ld [wNamedObjectIndexBuffer], a
+;	sub BRICK_PIECE
+;	pop bc
+;	pop de
+;	ret nz
+;
+;	ld [hl], a
+;
+;	ld h, d
+;	ld l, e
+;	ld a, b
+;	call GetPartyLocation
+;	push af
+;	ld a, BATTLE_VARS_MOVE_ANIM
+;	call GetBattleVarAddr
+;	push hl
+;	push af
+;	xor a
+;	ld [hl], a
+;	ld [wAttackMissed], a
+;	ld [wEffectFailed], a
+;	farcall BattleCommand_SpecialAttackUp
+;	pop af
+;	pop hl
+;	ld [hl], a
+;	call GetItemName
+;	ld hl, BattleText_UsersStringBuffer1Activated
+;	call StdBattleTextbox
+;	callfar BattleCommand_StatUpMessage
+;	pop af
+;	xor a
+;	ld [wNumHits], a
+;	call SwitchTurnCore
+;	
+;	ldh a, [hSerialConnectionStatus]
+;	cp USING_EXTERNAL_CLOCK
+;	jr z, .reverse5
+;
+;	call .player5
+;	jr .enemy5
+;
+;.reverse5
+;	call .enemy5
+;	; fallthrough
+;
+;.player5
+;	call SetPlayerTurn
+;	ld de, wPartyMon1Item
+;	ld a, [wCurBattleMon]
+;	ld b, a
+;	jr .go5
+;
+;.enemy5
+;	call SetEnemyTurn
+;	ld de, wOTPartyMon1Item
+;	ld a, [wCurOTMon]
+;	ld b, a
+;	; fallthrough
+;
+;.go5
+;	push de
+;	push bc
+;	callfar GetUserItem
+;	ld a, [hl]
+;	ld [wNamedObjectIndexBuffer], a
+;	sub WISDOM_ORB
+;	pop bc
+;	pop de
+;	ret nz
+;
+;	ld [hl], a
+;
+;	ld h, d
+;	ld l, e
+;	ld a, b
+;	call GetPartyLocation
+;	push af
+;	ld a, BATTLE_VARS_MOVE_ANIM
+;	call GetBattleVarAddr
+;	push hl
+;	push af
+;	xor a
+;	ld [hl], a
+;	ld [wAttackMissed], a
+;	ld [wEffectFailed], a
+;	farcall BattleCommand_SpecialDefenseUp
+;	pop af
+;	pop hl
+;	ld [hl], a
+;	call GetItemName
+;	ld hl, BattleText_UsersStringBuffer1Activated
+;	call StdBattleTextbox
+;	callfar BattleCommand_StatUpMessage
+;	pop af
+;	xor a
+;	ld [wNumHits], a
+;	call SwitchTurnCore
+;
+;	ldh a, [hSerialConnectionStatus]
+;	cp USING_EXTERNAL_CLOCK
+;	jr z, .reverse6
+;
+;	call .player6
+;	jr .enemy6
+;
+;.reverse6
+;	call .enemy6
+;	; fallthrough
+;
+;.player6
+;	call SetPlayerTurn
+;	ld de, wPartyMon1Item
+;	ld a, [wCurBattleMon]
+;	ld b, a
+;	jr .go6
+;
+;.enemy6
+;	call SetEnemyTurn
+;	ld de, wOTPartyMon1Item
+;	ld a, [wCurOTMon]
+;	ld b, a
+;	; fallthrough
+;
+;.go6
+;	push de
+;	push bc
+;	callfar GetUserItem
+;	ld a, [hl]
+;	ld [wNamedObjectIndexBuffer], a
+;	sub POWER_WINGS
+;	pop bc
+;	pop de
+;	ret nz
+;
+;	ld [hl], a
+;
+;	ld h, d
+;	ld l, e
+;	ld a, b
+;	call GetPartyLocation
+;;	ld a, BATTLE_VARS_SUBSTATUS3
+;;	call GetBattleVarAddr
+;	push af
+;	ld a, BATTLE_VARS_MOVE_ANIM
+;	call GetBattleVarAddr
+;	push hl
+;	push af
+;	xor a
+;	ld [hl], a
+;	ld [wAttackMissed], a
+;	ld [wEffectFailed], a
+;	farcall BattleCommand_SpeedUp
+;	pop af
+;	pop hl
+;	ld [hl], a
+;	call GetItemName
+;	ld hl, BattleText_UsersStringBuffer1Activated
+;	call StdBattleTextbox
+;	callfar BattleCommand_StatUpMessage
+;	pop af
+;	xor a
+;	ld [wNumHits], a
+;	call SwitchTurnCore
+;
+;;HandleFocusOrb:
+;	ldh a, [hSerialConnectionStatus]
+;	cp USING_EXTERNAL_CLOCK
+;	jr z, .reverse7
+;
+;	call .player7
+;	jr .enemy7
+;
+;.reverse7
+;	call .enemy7
+;	; fallthrough
+;
+;.player7
+;	call SetPlayerTurn
+;	ld de, wPartyMon1Item
+;	ld a, [wCurBattleMon]
+;	ld b, a
+;	jr .go7
+;
+;.enemy7
+;	call SetEnemyTurn
+;	ld de, wOTPartyMon1Item
+;	ld a, [wCurOTMon]
+;	ld b, a
+;	; fallthrough
+;
+;.go7
+;	push de
+;	push bc
+;	callfar GetUserItem
+;	ld a, [hl]
+;	ld [wNamedObjectIndexBuffer], a
+;	sub FOCUS_ORB
+;	pop bc
+;	pop de
+;	ret nz
+;
+;	ld [hl], a
+;
+;	ld h, d
+;	ld l, e
+;	ld a, b
+;	call GetPartyLocation
+;;	ld a, BATTLE_VARS_SUBSTATUS3
+;;	call GetBattleVarAddr
+;	push af
+;	ld a, BATTLE_VARS_MOVE_ANIM
+;	call GetBattleVarAddr
+;	push hl
+;	push af
+;	xor a
+;	ld [hl], a
+;	ld [wAttackMissed], a
+;	ld [wEffectFailed], a
+;	farcall BattleCommand_AccuracyUp
+;	pop af
+;	pop hl
+;	ld [hl], a
+;	call GetItemName
+;	ld hl, BattleText_UsersStringBuffer1Activated
+;	call StdBattleTextbox
+;	callfar BattleCommand_StatUpMessage
+;	pop af
+;	xor a
+;	ld [wNumHits], a
+;	call SwitchTurnCore
+;
+;;HandleDetectOrb:
+;	ldh a, [hSerialConnectionStatus]
+;	cp USING_EXTERNAL_CLOCK
+;	jr z, .reverse8
+;
+;	call .player8
+;	jr .enemy8
+;
+;.reverse8
+;	call .enemy8
+;	; fallthrough
+;
+;.player8
+;	call SetPlayerTurn
+;	ld de, wPartyMon1Item
+;	ld a, [wCurBattleMon]
+;	ld b, a
+;	jr .go8
+;
+;.enemy8
+;	call SetEnemyTurn
+;	ld de, wOTPartyMon1Item
+;	ld a, [wCurOTMon]
+;	ld b, a
+;	; fallthrough
+;
+;.go8
+;	push de
+;	push bc
+;	callfar GetUserItem
+;	ld a, [hl]
+;	ld [wNamedObjectIndexBuffer], a
+;	sub DETECT_ORB
+;	pop bc
+;	pop de
+;	ret nz
+;
+;	ld [hl], a
+;
+;	ld h, d
+;	ld l, e
+;	ld a, b
+;	call GetPartyLocation
+;;	ld [hl], a
+;;	ld a, BATTLE_VARS_SUBSTATUS3
+;	call GetBattleVarAddr
+;	push af
+;;	set SUBSTATUS_CONFUSED, [hl]
+;	ld a, BATTLE_VARS_MOVE_ANIM
+;	call GetBattleVarAddr
+;	push hl
+;	push af
+;	xor a
+;	ld [hl], a
+;	ld [wAttackMissed], a
+;	ld [wEffectFailed], a
+;	farcall BattleCommand_EvasionUp
+;	pop af
+;	pop hl
+;	ld [hl], a
+;	call GetItemName
+;	ld hl, BattleText_UsersStringBuffer1Activated
+;	call StdBattleTextbox
+;	callfar BattleCommand_StatUpMessage
+;	pop af
+;;	bit SUBSTATUS_CONFUSED, a
+;;	ret nz
+;	xor a
+;	ld [wNumHits], a
+;	call Call_PlayBattleAnim_OnlyIfVisible
+;	call SwitchTurnCore
+;	ld hl, BecameConfusedText
+;	jp StdBattleTextbox
+;
+;HandleEnergyWall:
+;	ldh a, [hSerialConnectionStatus]
+;	cp USING_EXTERNAL_CLOCK
+;	jr z, .reverse9
+;
+;	call .player9
+;	jr .enemy9
+;
+;.reverse9
+;	call .enemy9
+;	; fallthrough
+;
+;.player9
+;	call SetPlayerTurn
+;	ld de, wPartyMon1Item
+;	ld a, [wCurBattleMon]
+;	ld b, a
+;	jr .go9
+;
+;.enemy9
+;	call SetEnemyTurn
+;	ld de, wOTPartyMon1Item
+;	ld a, [wCurOTMon]
+;	ld b, a
+;	; fallthrough
+;
+;.go9
+;	push de
+;	push bc
+;	callfar GetUserItem
+;	ld a, [hl]
+;	ld [wNamedObjectIndexBuffer], a
+;	sub ENERGY_WALL
+;	pop bc
+;	pop de
+;	ret nz
+;
+;	ld [hl], a
+;
+;	ld h, d
+;	ld l, e
+;	ld a, b
+;	call GetPartyLocation
+;	ld a, BATTLE_VARS_SUBSTATUS3
+;	call GetBattleVarAddr
+;	push af
+;	set SUBSTATUS_CONFUSED, [hl]
+;	ld a, BATTLE_VARS_MOVE_ANIM
+;	call GetBattleVarAddr
+;	push hl
+;	push af
+;	xor a
+;	ld [hl], a
+;	ld [wAttackMissed], a
+;	ld [wEffectFailed], a
+;	farcall BattleCommand_SpecialDefenseUp2
+;	pop af
+;	pop hl
+;	ld [hl], a
+;	call GetItemName
+;	ld hl, BattleText_UsersStringBuffer1Activated
+;	call StdBattleTextbox
+;	callfar BattleCommand_StatUpMessage
+;	pop af
+;;	bit SUBSTATUS_CONFUSED, a
+;;	ret nz
+;	xor a
+;	ld [wNumHits], a
+;;	call Call_PlayBattleAnim_OnlyIfVisible
+;	call SwitchTurnCore
+;;	ld hl, BecameConfusedText
+;;	jp StdBattleTextbox
+;
 EnemyTriesToFlee:
 	ld a, [wLinkMode]
 	and a
@@ -422,6 +968,7 @@ DetermineMoveOrder:
 .switch
 	callfar AI_Switch
 	call SetEnemyTurn
+	call ConfuseClawDamage
 	call SpikesDamage
 	jp .enemy_first
 
@@ -1261,7 +1808,8 @@ HandleLeftovers:
 	ret z
 
 .restore
-	call GetSixteenthMaxHP
+	;call GetSixteenthMaxHP
+	ld bc, $1e
 	call SwitchTurnCore
 	call RestoreHP
 	ld hl, BattleText_TargetRecoveredWithItem
@@ -2276,6 +2824,7 @@ EnemyPartyMonEntrance:
 .done_switch
 	call ResetBattleParticipants
 	call SetEnemyTurn
+	call ConfuseClawDamage
 	call SpikesDamage
 	xor a
 	ld [wEnemyMoveStruct + MOVE_ANIM], a
@@ -2659,6 +3208,7 @@ ForcePlayerMonChoice:
 	call EmptyBattleTextbox
 	call LoadTilemapToTempTilemap
 	call SetPlayerTurn
+	call ConfuseClawDamage
 	call SpikesDamage
 	ld a, $1
 	and a
@@ -2679,6 +3229,7 @@ PlayerPartyMonEntrance:
 	call EmptyBattleTextbox
 	call LoadTilemapToTempTilemap
 	call SetPlayerTurn
+	call ConfuseClawDamage
 	jp SpikesDamage
 
 SetUpBattlePartyMenu_NoLoop:
@@ -3364,7 +3915,7 @@ Function_SetEnemyMonAndSendOutAnimation:
 	ld a, 1 ; shiny anim
 	ld [wBattleAnimParam], a
 	ld de, ANIM_SEND_OUT_MON
-	call Call_PlayBattleAnim
+	;call Call_PlayBattleAnim
 
 .cry_no_anim
 	ld a, $f
@@ -3815,7 +4366,7 @@ SendOutPlayerMon:
 	ld a, 1
 	ld [wBattleAnimParam], a
 	ld de, ANIM_SEND_OUT_MON
-	call Call_PlayBattleAnim
+	;call Call_PlayBattleAnim
 
 .not_shiny
 	ld a, $f0
@@ -3901,6 +4452,49 @@ SpikesDamage:
 
 .hl
 	jp hl
+
+ConfuseClawDamage:
+;	ld hl, wBattleMonItem
+;	ld bc, UpdatePlayerHUD
+;	ldh a, [hBattleTurn]
+;	and a
+;	jr z, .ok
+;	ld hl, wEnemyMonItem
+;	ld bc, UpdateEnemyHUD
+;.ok
+;
+;	ld a, [hl]
+;	ld d, a
+;	callfar GetItemHeldEffect
+;	ld a, d
+;	cp HELD_SPIKES
+;	ret z
+;
+;	; Flying-types aren't affected by Spikes.
+;	ld a, [de]
+;	cp FLYING
+;	ret z
+;	inc de
+;	ld a, [de]
+;	cp FLYING
+;	ret z
+;
+;	push bc
+;
+;	ld hl, BattleText_UserHurtByClaw ; "CONFUSE CLAW hurt"
+;	call StdBattleTextbox
+;
+;	call GetEighthMaxHP
+;	call SubtractHPFromUser
+;
+;	pop hl
+;;	call .hl
+;
+;	jp WaitBGMap
+
+;.hl
+;	jp hl
+
 
 PursuitSwitch:
 	ld a, BATTLE_VARS_MOVE
@@ -4183,6 +4777,9 @@ UseHeldStatusHealingItem:
 
 INCLUDE "data/battle/held_heal_status.asm"
 
+; // Perhaps here, there should be a held item process that restores status and all HP. It was removed mid 1999.
+; // I may need to recreate it myself, somehow...
+
 UseConfusionHealingItem:
 	ld a, BATTLE_VARS_SUBSTATUS3_OPP
 	call GetBattleVar
@@ -4225,7 +4822,6 @@ UseConfusionHealingItem:
 	ret
 
 HandleStatBoostingHeldItems:
-; The effects handled here are not used in-game.
 	ldh a, [hSerialConnectionStatus]
 	cp USING_EXTERNAL_CLOCK
 	jr z, .player_1
@@ -4246,8 +4842,8 @@ HandleStatBoostingHeldItems:
 	ld a, $1
 .HandleItem:
 	ldh [hBattleTurn], a
-	ld d, h
-	ld e, l
+	;ld d, h
+	;ld e, l
 	push de
 	push bc
 	ld a, [bc]
@@ -4947,6 +5543,7 @@ PlayerSwitch:
 EnemyMonEntrance:
 	callfar AI_Switch
 	call SetEnemyTurn
+	call ConfuseClawDamage
 	jp SpikesDamage
 
 BattleMonEntrance:
@@ -4980,6 +5577,7 @@ BattleMonEntrance:
 	call EmptyBattleTextbox
 	call LoadTilemapToTempTilemap
 	call SetPlayerTurn
+	call ConfuseClawDamage
 	call SpikesDamage
 	ld a, $2
 	ld [wMenuCursorY], a
@@ -5004,6 +5602,7 @@ PassedBattleMonEntrance:
 	call EmptyBattleTextbox
 	call LoadTilemapToTempTilemap
 	call SetPlayerTurn
+	call ConfuseClawDamage
 	jp SpikesDamage
 
 BattleMenu_Run:
@@ -7795,10 +8394,10 @@ InitEnemyTrainer:
 	callfar GetTrainerAttributes
 	callfar ReadTrainerParty
 
-	; RIVAL1's first mon has no held item
-	ld a, [wTrainerClass]
-	cp RIVAL1
-	jr nz, .ok
+;	; RIVAL1's first mon has no held item // But I want it to. Why is this check even here???
+;	ld a, [wTrainerClass]
+;	cp RIVAL1
+;	jr nz, .ok 
 	xor a
 	ld [wOTPartyMon1Item], a
 
@@ -8678,7 +9277,7 @@ BattleStartMessage:
 	ld a, 1
 	ld [wBattleAnimParam], a
 	ld de, ANIM_SEND_OUT_MON
-	call Call_PlayBattleAnim
+	;call Call_PlayBattleAnim
 
 .not_shiny
 	ld a, $f

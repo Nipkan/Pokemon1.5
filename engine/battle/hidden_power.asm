@@ -39,7 +39,6 @@ HiddenPowerDamage:
 	and %1000
 	srl a
 	srl a
-	srl a
 	or b
 
 ; Multiply by 5
@@ -54,13 +53,13 @@ HiddenPowerDamage:
 	and %0011
 	add b
 
-; Divide by 2 and add 30 + 1
-	srl a
-	add 30
+; Divide by 2 and add 30 + 1 // Did not add 30 until some time after 7/14/1999.
+	;srl a
+	add 0
 	inc a
 
 	ld d, a
-
+; //I think end result is 1-81? According to tcrf, the range should be 1-79. This is the best i can do if this works, though...
 ; Type:
 
 	; Def & 3
