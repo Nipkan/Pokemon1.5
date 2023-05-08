@@ -75,7 +75,7 @@ KumeSocialHouseN64LassUpMovement:
 	step_end
 	
 KumeSocialHouseYoungsterText:
-	text "I think WILL is"
+	text "I think LORELEI is"
 	line "the coolest member"
 	cont "of the ELITE FOUR."
 	para "It's not even"

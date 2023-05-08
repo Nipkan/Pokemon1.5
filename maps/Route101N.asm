@@ -68,7 +68,7 @@ TrainerFledglingHugo:
 	end
 	
 Route101Potion2:
-	itemball POTION
+	itemball REVIVE
 
 Route101Sign2:
 	jumptext Route101Sign2Text

@@ -182,12 +182,19 @@ DebugSign:
 ;	giveitem STEEL_SHELL
 ;	giveitem POWER_WINGS
 ;	givepoke TYKER, 5
-;	givepoke BIPULLA, 5
-;	givepoke REMORAID, 5
-;	givepoke STROMEN, 5
-;	givepoke SCYTHER, 5
-;	givepoke SNEASEL, 5
-	givepoke SUNFLORA, 5
+	givepoke CLEFFA, 1
+	givepoke IGGLYBUFF, 1
+	givepoke MAGBY, 1
+	givepoke ELEKID, 1
+	givepoke COINPUR, 1
+	givepoke SMOOCHUM, 1
+	givepoke PICHU, 1
+	givepoke PUPPERON, 1
+	givepoke VULPIII, 1
+	givepoke SMUJJ, 1
+	givepoke BALLERINE, 1
+	givepoke BURGELA, 1
+	givepoke KOLTA, 1
 	jumptext DebugSignText
 	closetext
 	end

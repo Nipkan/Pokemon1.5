@@ -90,51 +90,95 @@ WillsRoom_EnterMovement:
 WillScript_WillBeforeText:
 	text "Welcome to the"
 	line "NIHON LEAGUE,"
-	cont "<PLAYER>."
+	cont "trainer."
 
-	para "Allow me to intro-"
-	line "duce myself. I am"
-	cont "WILL."
+;	para "Allow me to intro-"
+;	line "duce myself. I am"
+;	cont "WILL."
+	para "I, LORELEI of the"
+	line "ELITE FOUR, have"
+	cont "returned!"
+;
+;	para "I have trained all"
+;	line "around the world,"
 
-	para "I have trained all"
-	line "around the world,"
+	para "I'm sure it goes"
+	line "without saying…"
 
-	para "making my psychic"
-	line "#MON powerful."
+;	para "making my psychic"
+;	line "#MON powerful."
 
-	para "And, at last, I've"
-	line "been accepted into"
-	cont "the ELITE FOUR."
+	para "No one can best me"
+	line "when it comes to"
+	cont "icy #MON!"
 
-	para "I can only keep"
-	line "getting better!"
+;	para "And, at last, I've"
+;	line "been accepted into"
+;	cont "the ELITE FOUR."
 
-	para "Losing is not an"
-	line "option!"
+	para "Once your POK#MON"
+	line "are frozen, they"
+	cont "can't do a thing!"
+	
+	para "Though I admit, I"
+	line "can feel the fire"
+	para "in your heart"
+	line "burning even from"
+	cont "here…"
+	
+	para "I wonder, will you"
+	line "be able to make me"
+	para "feel the heat of"
+	line "battle?"
 	done
 
+;	para "I can only keep"
+;	line "getting better!"
+
+
+
+;	para "Losing is not an"
+;	line "option!"
+;	done
+;
 WillScript_WillBeatenText:
-	text "I… I can't…"
-	line "believe it…"
+;	text "I… I can't…"
+;	line "believe it…"
+;	done
+	text "Argh! How?!"
 	done
 
 WillScript_WillDefeatText:
-	text "Even though I was"
-	line "defeated, I won't"
-	cont "change my course."
+;	text "Even though I was"
+;	line "defeated, I won't"
+;	cont "change my course."
 
-	para "I will continue"
-	line "battling until I"
+	text "Looks like you're"
+	line "stronger than I"
+	cont "anticipated…"
 
-	para "stand above all"
-	line "trainers!"
+;	para "I will continue"
+;	line "battling until I"
+	
+	para "Go on ahead. You"
+	line "only got a taste of"
+	cont "the #MON LEAGUE's"
+	cont "power."
 
-	para "Now, <PLAYER>, move"
-	line "on and experience"
+;	para "stand above all"
+;	line "trainers!"
 
-	para "the true ferocity"
-	line "of the ELITE FOUR."
-	done
+	para "I may have lost to"
+	line "you, but I'll never"
+	para "give up on my ICE-"
+	line "type #MON!"
+
+;	para "Now, <PLAYER>, move"
+;	line "on and experience"
+;
+;	para "the true ferocity"
+;	line "of the ELITE FOUR."
+;	done
 
 WillsRoom_MapEvents:
 	db 0, 0 ; filler

@@ -10,7 +10,7 @@ TinTower9FUnusedHoOhText:
 
 TinTower9FUnusedBlisseyText:
 ; unused
-	text "BLISSEY: Gyaaan!"
+	text "JOICEY: Gyaaan!"
 	done
 
 TinTower9F_MapEvents:

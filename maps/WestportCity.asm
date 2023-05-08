@@ -235,8 +235,8 @@ SilverHasItFiguredOut2:
 	done
 	
 WestportCityMonText:
-	text "BLISSEY:"
-	line "BIBI!"
+	text "JOICEY:"
+	line "Jyojyo!"
 	done
 	
 WestportCityDocksSignText:
@@ -313,7 +313,7 @@ WestportCityYoungster2Text:
 	done
 
 WestportCityLassText:
-	text "My BLISSEY is able"
+	text "My JOICEY is able"
 	line "to heal #MON"
 	cont "using a move!"
 	para "Some #MON have"

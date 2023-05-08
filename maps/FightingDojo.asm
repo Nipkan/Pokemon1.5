@@ -138,7 +138,7 @@ TrainerBlackbeltLung:
 	
 UnknownText_0x7e3551:
 	text "<PLAYER> received"
-	line "TYROGUE."
+	line "HITMONLAD."
 	done
 	
 UnknownText_0x7e3df1:
@@ -147,13 +147,20 @@ UnknownText_0x7e3df1:
 	done
 	
 Text_FocusBandDescription:
-	text "TYROGUE can evolve"
-	line "into one of three"
-	para "different fighting"
-	line "#MON!"
+	text "HITMONLAD evolves"
+	line "into 3 different"
+	para "fighting #MON"
+	line "at the same time!"
+	para "You'll need to"
+	line "cancel the evo-"
+	cont "lution process by"
+	para "pressing B button"
+	line "if you want to see"
+	cont "the other two."
 	para "A trainer like you"
 	line "should have no"
-	cont "issue raising it!"
+	cont "issue figuring it"
+	cont "out!"
 	done
 	
 Text_GoodJob:

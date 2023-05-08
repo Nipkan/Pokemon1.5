@@ -259,7 +259,7 @@ ArtistEarlWrongPokemonText:
 
 ArtistEarlLickitungText:
 	text "If I could only"
-	line "see a LUXWAN in"
+	line "see a M'DAAME in"
 	para "person, I might"
 	line "feel inspired to"
 	cont "finish my statue."
@@ -268,7 +268,7 @@ ArtistEarlLickitungText:
 
 ArtistEarlOddishText:
 	text "I've finished my"
-	line "LUXWAN statue!"
+	line "M'DAAME statue!"
 	para "Now I'd like to"
 	line "finish my statue"
 	cont "of a DRATINI."
@@ -281,7 +281,7 @@ ArtistEarlOddishText:
 
 	
 BirdText:
-	text "LUXWAN STATUE"
+	text "M'DAAME STATUE"
 	line "by EARL"
 	done
 	

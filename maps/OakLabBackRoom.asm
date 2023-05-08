@@ -167,7 +167,7 @@ CubburnPokeBallScript:
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	buttonsound
-	givepoke CUBBURN, 5, BERRY
+	givepoke CUBBURN, 5, NO_ITEM
 	closetext
 	applymovement OAK2SLAB_SILVER, SilverGetCruiseMovement
 	opentext
@@ -205,7 +205,7 @@ CruisePokeBallScript:
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	buttonsound
-	givepoke PALSSIO, 5, BERRY
+	givepoke PALSSIO, 5, NO_ITEM
 	closetext
 	applymovement OAK2SLAB_SILVER, SilverGetChikoritaMovement
 	opentext
@@ -243,7 +243,7 @@ ChikoritaPokeBallScript:
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	buttonsound
-	givepoke CHIKORITA, 5, BERRY
+	givepoke CHIKORITA, 5, NO_ITEM
 	closetext
 	applymovement OAK2SLAB_SILVER, SilverGetCubburnMovement
 	opentext
