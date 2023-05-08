@@ -30,31 +30,31 @@ PokemonFellFromTreeText:
 
 WantsToBattleText::
 	text "<ENEMY>"
-	line "wants to battle!"
+	line "wants to fight!"
 	prompt
 
 BattleText_WildFled:
 	text "Wild @"
 	text_ram wEnemyMonNick
 	text_start
-	line "fled!"
+	line "ran!"
 	prompt
 
 BattleText_EnemyFled:
 	text "Enemy @"
 	text_ram wEnemyMonNick
 	text_start
-	line "fled!"
+	line "ran!"
 	prompt
 
 HurtByPoisonText:
-	text "<USER>"
-	line "is hurt by poison!"
+	text "<USER>'s"
+	line "hurt by poison!"
 	prompt
 
 HurtByBurnText:
 	text "<USER>'s"
-	line "hurt by its burn!"
+	line "hurt by the burn!"
 	prompt
 
 LeechSeedSapsText:
@@ -167,8 +167,8 @@ GotMoneyForWinningText:
 	prompt
 
 BattleText_EnemyWasDefeated:
-	text "<ENEMY>"
-	line "was defeated!"
+	text "<PLAYER> defeated"
+	line "<ENEMY>!"
 	prompt
 
 TiedAgainstText:
@@ -215,7 +215,7 @@ BattleText_0x101459:
 	prompt
 
 LostAgainstText:
-	text "Lost against"
+	text "<PLAYER> lost to"
 	line "<ENEMY>!"
 	prompt
 
@@ -240,7 +240,7 @@ BattleText_EnemySentOut:
 
 BattleText_TheresNoWillToBattle:
 	text "There's no will to"
-	line "battle!"
+	line "fight!"
 	prompt
 
 BattleText_AnEGGCantBattle:
@@ -278,6 +278,12 @@ BattleText_UserHurtBySpikes:
 	text "<USER>'s"
 	line "hurt by SPIKES!"
 	prompt
+
+BattleText_UserHurtByClaw:
+	text "CONFUSE CLAW hurts"
+	line "<USER>!"
+	prompt
+
 
 RecoveredUsingText:
 	text "<TARGET>"
@@ -319,13 +325,13 @@ BattleText_TheresNoPPLeftForThisMove:
 
 BattleText_TheMoveIsDisabled:
 	text "The move is"
-	line "DISABLED!"
+	line "disabled!"
 	prompt
 
 BattleText_MonHasNoMovesLeft:
 	text_ram wBattleMonNick
-	text_start
-	line "has no moves left!"
+	text " has no"
+	line "moves left!"
 	done
 
 BattleText_TargetsEncoreEnded:
@@ -747,13 +753,15 @@ BlownAwayText:
 	prompt
 
 PlayerHitTimesText:
-	text "Hit @"
+	text "Hit the enemy"
+	line "@"
 	text_decimal wPlayerDamageTaken, 1, 1
 	text " times!"
 	prompt
 
 EnemyHitTimesText:
-	text "Hit @"
+	text "Hit the enemy"
+	line "@"
 	text_decimal wEnemyDamageTaken, 1, 1
 	text " times!"
 	prompt
@@ -820,7 +828,7 @@ WasSeededText:
 
 EvadedText:
 	text "<TARGET>"
-	line "evaded the attack!"
+	line "evaded attack!"
 	prompt
 
 WasDisabledText:
@@ -838,15 +846,15 @@ CoinsScatteredText:
 
 TransformedTypeText:
 	text "<USER>"
-	line "transformed into"
+	line "converted into"
 	cont "the @"
 	text_ram wStringBuffer1
 	text "-type!"
 	prompt
 
 EliminatedStatsText:
-	text "All stat changes"
-	line "were eliminated!"
+	text "All STATUS changes"
+	line "are eliminated!"
 	prompt
 
 TransformedText:
@@ -868,12 +876,11 @@ ReflectEffectText:
 	prompt
 
 NothingHappenedText:
-	text "But nothing"
-	line "happened."
+	text "No effect!"
 	prompt
 
 ButItFailedText:
-	text "But it failed!"
+	text "But, it failed!"
 	prompt
 
 ItFailedText:
@@ -886,7 +893,7 @@ DidntAffect1Text:
 	prompt
 
 DidntAffect2Text:
-	text "It didn't affect"
+	text "It doesn't affect"
 	line "<TARGET>!"
 	prompt
 
@@ -902,8 +909,8 @@ DraggedOutText:
 
 ParalyzedText:
 	text "<TARGET>'s"
-	line "paralyzed! Maybe"
-	cont "it can't attack!"
+	line "paralyzed! It"
+	cont "may not attack!"
 	prompt
 
 FullyParalyzedText:
@@ -955,9 +962,9 @@ WasDefrostedText:
 
 PutACurseText:
 	text "<USER>"
-	line "cut its own HP and"
+	line "covered by a veil!"
 
-	para "put a CURSE on"
+	para "body in effigy of"
 	line "<TARGET>!"
 	prompt
 
