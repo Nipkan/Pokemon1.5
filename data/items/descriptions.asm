@@ -318,11 +318,11 @@ MaxPotionDesc:
 
 HyperPotionDesc:
 	db   "Restores #MON"
-	next "HP by 200.@"
+	next "HP by 200. @"
 
 SuperPotionDesc:
 	db   "Restores #MON"
-	next "HP by 50.@"
+	next "HP by 50. @"
 
 PotionDesc:
 	db   "Restores #MON"
@@ -389,7 +389,7 @@ RareCandyDesc:
 
 XAccuracyDesc:
 	db   "Raises accuracy."
-	next "(1 BTL)@"
+	next "@"
 
 LeafStoneDesc:
 	db   "Evolves certain"
@@ -404,24 +404,24 @@ NuggetDesc:
 	next "Sell high.@"
 
 PokeDollDesc:
-	db   "Use to escape from"
-	next "a wild #MON.@"
+	db   "Escape from one"
+	next "wild #MON. @"
 
 FullHealDesc:
-	db   "Eliminates all"
-	next "status problems.@"
+	db   "Cures all status"
+	next "problems. @"
 
 ReviveDesc:
 	db   "Restores a fainted"
-	next "#MON to 1/2 HP.@"
+	next "#MON to 1/2 HP. @"
 
 MaxReviveDesc:
 	db   "Fully restores a"
-	next "fainted #MON.@"
+	next "fainted #MON. @"
 
 GuardSpecDesc:
-	db   "Prevents stat"
-	next "reduction. (1 BTL)@"
+	db   "Raises SPECIAL"
+	next "DEFENSE. @"
 
 SuperRepelDesc:
 	db   "Repels weak #-"
@@ -441,19 +441,19 @@ PoisonStoneDesc:
 
 FreshWaterDesc:
 	db   "Restores #MON"
-	next "HP by 50.@"
+	next "HP by 50. @"
 
 SodaPopDesc:
 	db   "Restores #MON"
-	next "HP by 60.@"
+	next "HP by 60. @"
 
 LemonadeDesc:
 	db   "Restores #MON"
-	next "HP by 80.@"
+	next "HP by 80. @"
 
 XAttackDesc:
 	db   "Raises ATTACK."
-	next "(1 BTL)@"
+	next "(1 BTL) @"
 
 OldAmberDesc:
 	db   "A mysterious"
@@ -461,15 +461,15 @@ OldAmberDesc:
 
 XDefendDesc:
 	db   "Raises DEFENSE."
-	next "(1 BTL)@"
+	next "(1 BTL) @"
 
 XSpeedDesc:
 	db   "Raises SPEED."
-	next "(1 BTL)@"
+	next "(1 BTL) @"
 
 XSpecialDesc:
 	db   "Raises SPECIAL"
-	next "stats. (1 BTL)@"
+	next "ATTACK. (1 BTL) @"
 
 CoinCaseDesc:
 	db   "Holds up to 9,999"
@@ -545,7 +545,7 @@ SilverWingDesc:
 
 MoomooMilkDesc:
 	db   "Restores #MON"
-	next "HP by 100.@"
+	next "HP by 100. @"
 
 QuickClawDesc:
 	db   "Raises 1st strike"
@@ -553,7 +553,7 @@ QuickClawDesc:
 
 PsnCureBerryDesc:
 	db   "A self-cure for"
-	next "poison. (HOLD)@"
+	next "poison. @"
 
 GoldLeafDesc:
 	db   "A strange, gold-"
@@ -569,15 +569,15 @@ SharpBeakDesc:
 
 PrzCureBerryDesc:
 	db   "A self-cure for"
-	next "paralysis. (HOLD)@"
+	next "paralysis. @"
 
 BurntBerryDesc:
 	db   "A self-cure for"
-	next "freezing. (HOLD)@"
+	next "freezing. @"
 
 IceBerryDesc:
 	db   "A self-heal for a"
-	next "burn. (HOLD)@"
+	next "burn. @"
 
 PoisonBarbDesc:
 	db   "Powers up poison-"
@@ -589,11 +589,11 @@ KingsRockDesc:
 
 BitterBerryDesc:
 	db   "A self-cure for"
-	next "confusion. (HOLD)@"
+	next "confusion. @"
 
 MintBerryDesc:
 	db   "A self-awakening"
-	next "for sleep. (HOLD)@"
+	next "for sleep. @"
 
 RedApricornDesc:
 	db   "A red APRICORN.@"
@@ -688,7 +688,7 @@ MagnetDesc:
 
 MiracleBerryDesc:
 	db   "Cures all status"
-	next "problems. (HOLD)@"
+	next "problems. @"
 
 PearlDesc:
 	db   "A beautiful pearl."
@@ -722,8 +722,8 @@ MiracleSeedDesc:
 	next "type moves. (HOLD)@"
 
 ThickClubDesc:
-	db   "A bone of some"
-	next "sort. Sell low.@"
+	db   "Some sort of bone."
+	next "Sell low. (HOLD)@"
 
 FocusBandDesc:
 	db   "May prevent faint-"
@@ -820,7 +820,7 @@ ConfuseClawDesc:
 	next "(HOLD)@"
 
 MetalCoatDesc:
-	db   "Powers up steel-"
+	db   "Powers up metal-"
 	next "type moves. (HOLD)@"
 
 DragonFangDesc:
@@ -829,11 +829,11 @@ DragonFangDesc:
 
 FocusOrbDesc:
 	db   "Boosts ACCURACY"
-	next "once. (HOLD)@"
+	next "1 stage. (HOLD)@"
 
 LeftoversDesc:
-	db   "Restores HP during"
-	next "battle. (HOLD)@"
+	db   "Restores 30 HP per"
+	next "turn. (HOLD)@"
 
 CalmSeedDesc:
 	db   "Prevents confuse."
@@ -848,15 +848,15 @@ FireTailDesc:
 	next "(HOLD)@"
 
 MysteryBerryDesc:
-	db   "A self-restore"
-	next "for PP. (HOLD)@"
+	db   "Restores PP of one"
+	next "move by 5.@"
 
 DragonScaleDesc:
 	db   "A rare dragon-type"
 	next "item.@"
 
 BerserkGeneDesc:
-	db   "Boosts ATTACK but"
+	db   "Boosts every stat;"
 	next "causes confusion.@"
 
 ThunderTailDesc:
@@ -864,12 +864,12 @@ ThunderTailDesc:
 	next "paralysis. (HOLD)@"
 
 WisdomOrbDesc:
-	db   "Boosts SP. ATTACK"
-	next "once. (HOLD)@"
+	db   "Boosts SP. DEFENSE"
+	next "1 stage. (HOLD)@"
 
 DetectOrbDesc:
 	db   "Boosts EVASION"
-	next "once. (HOLD)@"
+	next "1 stage. (HOLD)@"
 
 SacredAshDesc:
 	db   "Fully revives all"
@@ -897,7 +897,7 @@ FastBallDesc:
 
 SharpHornsDesc:
 	db   "Boosts ATTACK"
-	next "once. (HOLD)@"
+	next "1 stage. (HOLD)@"
 
 LightBallDesc:
 	db   "An odd, electrical"
@@ -933,19 +933,19 @@ PolkadotBowDesc:
 
 PowerWingsDesc:
 	db   "Boosts SPEED"
-	next "once. (HOLD)@"
+	next "1 stage. (HOLD)@"
 
 UpGradeDesc:
 	db   "A mysterious box"
 	next "made by SILPH CO.@"
 
 BerryDesc:
-	db   "A self-restore"
-	next "item. (10HP, HOLD)@"
+	db   "Restores #MON"
+	next "HP by 10.@"
 
 GoldBerryDesc:
-	db   "A self-restore"
-	next "item. (30HP, HOLD)@"
+	db   "Restores #MON"
+	next "HP by 30.@"
 
 SquirtBottleDesc:
 	db   "A bottle used for"
@@ -953,7 +953,7 @@ SquirtBottleDesc:
 
 EnergyWallDesc:
 	db   "Boosts SP. DEFENSE"
-	next "once. (HOLD)@"
+	next "2 stages. (HOLD)@"
 
 ParkBallDesc:
 	db   "The Bug-Catching"
@@ -965,11 +965,11 @@ RainbowWingDesc:
 
 SteelShellDesc:
 	db   "Boosts DEFENSE"
-	next "once. (HOLD)@"
+	next "1 stage. (HOLD)@"
 
 BrickPieceDesc:
-	db   "A rare chunk of"
-	next "brick.@"
+	db   "Boosts SP. ATTACK"
+	next "1 stage. (HOLD)@"
 
 SurfMailDesc:
 	db   "LAPRAS-print MAIL."

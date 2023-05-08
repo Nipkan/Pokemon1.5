@@ -449,8 +449,8 @@ MartWestportNew:; good, also kanto dept store
 	db SHARP_HORNS
 	db STEEL_SHELL
 	db POWER_WINGS
+	db BRICK_PIECE
 	db WISDOM_ORB
-	db ENERGY_WALL
 	db DETECT_ORB
 	db FOCUS_ORB
 	db -1 ; end
