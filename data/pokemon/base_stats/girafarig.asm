@@ -1,12 +1,12 @@
 	db GIRAFARIG ; 203
 
-	db  70,  90,  75,  85,  90,  75
+	db  70,  80,  65,  85,  90,  65
 	;   hp  atk  def  spd  sat  sdf
 
 	db NORMAL, DARK ; type
-	db 60 ; catch rate
-	db 149 ; base exp
-	db NO_ITEM, NO_ITEM ; items
+	db 90 ; catch rate
+	db 126 ; base exp
+	db BERRY, CLEANSE_TAG ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch

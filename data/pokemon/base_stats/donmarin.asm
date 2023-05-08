@@ -1,12 +1,15 @@
 	db DONMARIN ; 160
 
-	db  100, 80, 90,  65,  95,  100
+;	db  55,  55,  60,  55,  55,  50
+;	db  75,  60,  70,  65,  60,  50
+	db  98,  79,  88,  70,  100,  90
+;	db  100, 80, 90,  65,  95,  100
 	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, WATER ; type
 	db 45 ; catch rate
 	db 210 ; base exp
-	db NO_ITEM, NO_ITEM ; items
+	db APPLE, WISDOM_ORB ; items
 	db GENDER_F12_5 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch

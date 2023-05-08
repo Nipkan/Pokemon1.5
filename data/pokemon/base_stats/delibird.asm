@@ -1,12 +1,12 @@
 	db DELIBIRD ; 225
 
-	db  45,  55,  45,  75,  65,  45
+	db  45,  45,  30,  75,  60,  45
 	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, ICE ; type
 	db 45 ; catch rate
-	db 183 ; base exp
-	db SILVER_LEAF, SILVER_LEAF ; items
+	db 144 ; base exp
+	db SILVER_LEAF, RARE_CANDY ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch

@@ -1,13 +1,13 @@
 	db BLISSEY ; 249
 
-	db 255,  10,  10,  55,  75, 135
+	db 250,  15,  15,  50,  45, 135
 	;   hp  atk  def  spd  sat  sdf
 
 	db NORMAL, NORMAL ; type
-	db 30 ; catch rate
+	db 25 ; catch rate
 	db 255 ; base exp
-	db NO_ITEM, NO_ITEM ; items
-	db GENDER_F100 ; gender ratio
+	db APPLE, LUCKY_EGG ; items
+	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 40 ; step cycles to hatch
 	db 5 ; unknown 2

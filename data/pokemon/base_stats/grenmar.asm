@@ -3,10 +3,10 @@
 	db  65, 97,  67,  77,  102,  77
 	;   hp  atk  def  spd  sat  sdf
 
-	db FIRE, WATER ; type
+	db WATER, FIRE ; type
 	db 75 ; catch rate
 	db 153 ; base exp
-	db NO_ITEM, NO_ITEM ; items
+	db BERRY, WATER_TAIL ; items
 	db GENDER_F25 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch

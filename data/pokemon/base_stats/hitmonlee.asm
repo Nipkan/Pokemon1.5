@@ -1,12 +1,12 @@
 	db HITMONLEE ; 106
 
-	db  50, 120,  53,  87,  35, 110
+	db  50, 120,  53,  87,  35,  85
 	;   hp  atk  def  spd  sat  sdf
 
 	db FIGHTING, FIGHTING ; type
 	db 45 ; catch rate
 	db 139 ; base exp
-	db NO_ITEM, NO_ITEM ; items
+	db APPLE, FOCUS_ORB ; items
 	db GENDER_F0 ; gender ratio
 	db 100 ; unknown 1
 	db 25 ; step cycles to hatch

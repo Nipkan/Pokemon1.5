@@ -1,12 +1,12 @@
 	db DIGLETT ; 050
 
-	db  10,  55,  25,  95,  35,  45
+	db  10,  55,  25,  95,  50,  45
 	;   hp  atk  def  spd  sat  sdf
 
 	db GROUND, GROUND ; type
 	db 255 ; catch rate
 	db 81 ; base exp
-	db EARTHEN_CLAY, EARTHEN_CLAY ; items
+	db BERRY, EARTHEN_CLAY ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch

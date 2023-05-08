@@ -1,12 +1,12 @@
 	db ELECTABUZZ ; 125
 
-	db  65,  83,  57, 105,  95,  85
+	db  65,  83,  57, 105,  85,  75
 	;   hp  atk  def  spd  sat  sdf
 
 	db ELECTRIC, ELECTRIC ; type
 	db 45 ; catch rate
 	db 156 ; base exp
-	db NO_ITEM, NO_ITEM ; items
+	db BERRY, MAGNET ; items
 	db GENDER_F25 ; gender ratio
 	db 100 ; unknown 1
 	db 25 ; step cycles to hatch

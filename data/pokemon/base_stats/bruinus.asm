@@ -1,12 +1,14 @@
 	db BRUINUS ; 157
 
-	db  85, 103,  85,  96, 95, 70
+;	db  70,  80,  60,  60, 70, 50
+	db  90, 105,  85,  75,  90,  80
+;	db  85, 103,  85,  96, 95, 70
 	;   hp  atk  def  spd  sat  sdf
 
 	db FIRE, FIRE ; type
 	db 45 ; catch rate
 	db 209 ; base exp
-	db NO_ITEM, NO_ITEM ; items
+	db APPLE, CHARCOAL ; items
 	db GENDER_F12_5 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch

@@ -1,12 +1,12 @@
 	db GRIMER ; 088
 
-	db  80,  80,  50,  25,  40,  50
+	db  80,  80,  50,  25,  55,  40
 	;   hp  atk  def  spd  sat  sdf
 
 	db POISON, POISON ; type
 	db 190 ; catch rate
 	db 90 ; base exp
-	db NUGGET, NUGGET ; items
+	db BERRY, NUGGET ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch

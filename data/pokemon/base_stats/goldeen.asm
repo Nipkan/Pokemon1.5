@@ -1,12 +1,12 @@
 	db GOLDEEN ; 118
 
-	db  45,  67,  60,  63,  35,  50
+	db  45,  67,  60,  63,  50,  50
 	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, WATER ; type
 	db 225 ; catch rate
 	db 111 ; base exp
-	db WATER_TAIL, WATER_TAIL ; items
+	db BERRY, WATER_TAIL ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch

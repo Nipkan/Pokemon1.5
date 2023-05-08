@@ -1,12 +1,12 @@
 	db GYARADOS ; 130
 
-	db  95, 125,  79,  81,  60, 100
+	db  95, 125,  79,  81,  85, 100
 	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, FLYING ; type
 	db 45 ; catch rate
 	db 214 ; base exp
-	db BITTER_BERRY, BITTER_BERRY ; items
+	db BITTER_BERRY, DRAGON_SCALE ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 5 ; step cycles to hatch

@@ -1,12 +1,12 @@
 	db HOOTHOOT ; 163
 
-	db  60,  30,  30,  50,  36,  56
+	db  60,  30,  30,  50,  45,  45
 	;   hp  atk  def  spd  sat  sdf
 
 	db FLYING, FLYING ; type
 	db 255 ; catch rate
 	db 58 ; base exp
-	db STIMULUS_ORB, STIMULUS_ORB ; items
+	db BERRY, STIMULUS_ORB ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 15 ; step cycles to hatch

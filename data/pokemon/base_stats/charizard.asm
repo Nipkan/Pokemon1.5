@@ -1,12 +1,12 @@
 	db CHARIZARD ; 006
 
-	db  78,  84,  78, 100, 109,  85
+	db  78,  84,  78, 100, 100,  85
 	;   hp  atk  def  spd  sat  sdf
 
 	db FIRE, FLYING ; type
 	db 45 ; catch rate
 	db 209 ; base exp
-	db NO_ITEM, NO_ITEM ; items
+	db APPLE, CONFUSE_CLAW ; items
 	db GENDER_F12_5 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch

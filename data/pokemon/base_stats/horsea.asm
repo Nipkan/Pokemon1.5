@@ -1,12 +1,12 @@
 	db HORSEA ; 116
 
-	db  30,  40,  70,  60,  70,  25
+	db  30,  40,  70,  60,  70,  45
 	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, WATER ; type
 	db 225 ; catch rate
 	db 83 ; base exp
-	db DRAGON_SCALE, DRAGON_SCALE ; items
+	db BERRY, SMOKE_BALL ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch

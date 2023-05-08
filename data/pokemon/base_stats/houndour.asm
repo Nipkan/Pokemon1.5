@@ -1,12 +1,12 @@
 	db HOUNDOUR ; 228
 
-	db  45,  60,  30,  65,  80,  50
+	db  45,  50,  35,  50,  70,  45
 	;   hp  atk  def  spd  sat  sdf
 
 	db DARK, FIRE ; type
-	db 120 ; catch rate
-	db 114 ; base exp
-	db CHARCOAL, CHARCOAL ; items
+	db 190 ; catch rate
+	db 97 ; base exp
+	db BERRY, THICK_CLUB ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch

@@ -1,12 +1,12 @@
 	db CUBONE ; 104
 
-	db  50,  50,  95,  35,  40,  50
+	db  50,  50,  95,  35,  40,  40
 	;   hp  atk  def  spd  sat  sdf
 
 	db GROUND, GROUND ; type
 	db 190 ; catch rate
 	db 87 ; base exp
-	db THICK_CLUB, THICK_CLUB ; items
+	db BERRY, THICK_CLUB ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 20 ; step cycles to hatch
