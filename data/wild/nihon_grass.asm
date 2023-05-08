@@ -12,84 +12,84 @@ NihonGrassWildMons:
 	map_id ROUTE_101
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 2, PIDGEY
-	db 2, HOPPIP
-	db 3, PIDGEY
-	db 3, FARFETCH_D
-	db 2, RATTATA
-	db 3, HOPPIP
-	db 3, HOPPIP
+	db 3, SUNFLORA
+	db 5, PIDGEY
+	db 5, SUNFLORA
+	db 5, PIDGEY
+	db 5, PIKACHU
+	db 7, PIDGEY
+	db 8, PIDGEY
 	; day
-	db 2, PIDGEY
-	db 2, HOPPIP
+	db 4, RATTATA
+	db 4, GIRAFARIG
+	db 6, GIRAFARIG
 	db 3, PIDGEY
-	db 3, FARFETCH_D
-	db 2, RATTATA
-	db 3, HOPPIP
-	db 3, HOPPIP
+	db 4, HOPPIP
+	db 4, MARILL
+	db 4, PIDGEY
 	; nite
+	db 5, RATTATA
+	db 5, RATTATA
+	db 7, RATTATA
+	db 3, HOOTHOOT
 	db 2, HOOTHOOT
-	db 2, RATTATA
-	db 3, HOOTHOOT
-	db 3, FARFETCH_D
-	db 2, RATTATA
-	db 3, HOOTHOOT
-	db 3, HOOTHOOT
+	db 5, RATTATA
+	db 5, PIKACHU
 	
 	map_id ROUTE_101N
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 2, PIDGEY
-	db 2, HOPPIP
-	db 3, PIDGEY
+	db 6, PIDGEY
+	db 8, SUNFLORA
+	db 6, SUNFLORA
+	db 4, EKANS
+	db 5, PIKACHU
+	db 5, RATTATA
 	db 3, FARFETCH_D
-	db 2, RATTATA
-	db 3, HOPPIP
-	db 3, HOPPIP
 	; day
-	db 2, PIDGEY
-	db 2, HOPPIP
-	db 3, PIDGEY
+	db 5, PIDGEY
+	db 7, SKARMORY
+	db 5, RATTATA
+	db 7, RATTATA
+	db 8, MARILL
+	db 8, HOPPIP
 	db 3, FARFETCH_D
-	db 2, RATTATA
-	db 3, HOPPIP
-	db 3, HOPPIP
 	; nite
-	db 2, HOOTHOOT
-	db 2, RATTATA
+	db 7, RATTATA
+	db 6, EKANS
+	db 6, HOOTHOOT
+	db 8, RATTATA
 	db 3, HOOTHOOT
+	db 5, PIKACHU
 	db 3, FARFETCH_D
-	db 2, RATTATA
-	db 3, HOOTHOOT
-	db 3, HOOTHOOT
 	
 
 	map_id SILENT_HILLS
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 2, PIDGEY
-	db 2, RATTATA
-	db 3, HOPPIP
+	db 7, LEDYBA
+	db 7, LEDYBA
+	db 5, METAPOD
+	db 7, PIDGEY
+	db 5, PIKACHU
 	db 3, FARFETCH_D
-	db 2, CATERPIE
-	db 3, MOIBELLE
 	db 3, MOIBELLE
 	; day
-	db 2, PIDGEY
-	db 2, RATTATA
-	db 3, HOPPIP
+	db 6, PIDGEY
+	db 4, CATERPIE
+	db 6, HOPPIP
+	db 6, MARILL
+	db 8, LEDYBA
 	db 3, FARFETCH_D
-	db 2, CATERPIE
-	db 3, MOIBELLE
 	db 3, MOIBELLE
 	; nite
-	db 2, HOOTHOOT
-	db 2, RATTATA
-	db 3, HOOTHOOT
-	db 3, FARFETCH_D
+	db 4, METAPOD
+	db 6, RATTATA
+	db 5, HOOTHOOT
 	db 2, WEEDLE
+	db 5, PIKACHU
 	db 3, MOIBELLE
-	db 3, MOIBELLE
+	db 3, FARFETCH_D
 	
 
 	map_id FIVE_FLOOR_TOWER_2F
@@ -115,7 +115,7 @@ NihonGrassWildMons:
 	db 4, GASTLY
 	db 5, GASTLY
 	db 3, RATTATA
-	db 7, STROMEN
+	db 7, RATTATA
 	db 5, RATTATA
 	db 5, RATTATA
 	
@@ -143,7 +143,7 @@ NihonGrassWildMons:
 	db 4, GASTLY
 	db 5, GASTLY
 	db 3, RATTATA
-	db 7, STROMEN
+	db 7, GASTLY
 	db 5, RATTATA
 	db 5, RATTATA
 	
@@ -170,7 +170,7 @@ NihonGrassWildMons:
 	db 4, GASTLY
 	db 5, GASTLY
 	db 3, RATTATA
-	db 7, STROMEN
+	db 7, RATTATA
 	db 5, RATTATA
 	db 5, RATTATA
 
@@ -178,27 +178,27 @@ NihonGrassWildMons:
 	map_id ROUTE_102
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 4, LEDYBA
-	db 4, ODDISH
+	db 9, CATERPIE
+	db 7, METAPOD
 	db 5, BELLSPROUT
 	db 5, GROWLITHE
-	db 5, PIDGEY
-	db 7, PIDGEY
-	db 7, PIDGEY
+	db 10, PIDGEY
+	db 7, METAPOD
+	db 10, PIDGEY
 	; day
-	db 4, PIDGEY
-	db 4, ODDISH
+	db 9, CATERPIE
+	db 8, PIDGEY
 	db 5, BELLSPROUT
-	db 5, GROWLITHE
-	db 5, PIDGEY
-	db 7, PIDGEY
-	db 7, PIDGEY
+	db 5, PUPPERON
+	db 9, RATTATA
+	db 10, RATTATA
+	db 11, RATTATA
 	; nite
+	db 9, RATTATA
 	db 4, SPINARAK
-	db 4, HOOTHOOT
-	db 5, ODDISH
-	db 5, HOOTHOOT
-	db 5, HOOTHOOT
+	db 10, HOOTHOOT
+	db 11, ODDISH
+	db 13, ODDISH
 	db 5, GASTLY
 	db 5, GASTLY
 
@@ -454,25 +454,25 @@ NihonGrassWildMons:
 	map_id ROUTE_103
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
+	db 17, DITTO
 	db 15, NIDORAN_F
 	db 15, NIDORAN_M
-	db 14, PIDGEY
 	db 14, MEOWTH
 	db 15, ABRA
 	db 14, VULPIX
-	db 14, VULPIX
+	db 14, FEAROW
 	; day
-	db 15, NIDORAN_F
+	db 17, SPEAROW
 	db 15, NIDORAN_M
-	db 14, PIDGEY
+	db 15, NIDORAN_F
 	db 14, MEOWTH
 	db 15, ABRA
 	db 14, VULPIX
 	db 14, VULPIX
 	; nite
+	db 19, DROWZEE
 	db 15, NIDORAN_F
 	db 15, NIDORAN_M
-	db 14, HOOTHOOT
 	db 14, MEOWTH
 	db 15, HOOTHOOT
 	db 14, VULPIX
@@ -621,7 +621,7 @@ NihonGrassWildMons:
 	db 14, POLIWAG
 	db 14, QUAGSIRE
 	db 13, GRIMER
-	db 15, ZUBAT
+	db 15, STROMEN
 	db 15, ZUBAT
 	; day
 	db 13, ZUBAT
@@ -629,7 +629,7 @@ NihonGrassWildMons:
 	db 14, POLIWAG
 	db 14, QUAGSIRE
 	db 13, GRIMER
-	db 15, ZUBAT
+	db 15, STROMEN
 	db 15, ZUBAT
 	; nite
 	db 13, ZUBAT
@@ -637,7 +637,7 @@ NihonGrassWildMons:
 	db 14, POLIWAG
 	db 14, QUAGSIRE
 	db 13, GRIMER
-	db 15, ZUBAT
+	db 15, STROMEN
 	db 15, ZUBAT
 
 	map_id SANSKRIT_RUINS_INNER_CHAMBER
@@ -729,13 +729,13 @@ NihonGrassWildMons:
 	db 14, NATU
 	db 14, NATU
 	db 13, MAREEP
-	db 15, PIDGEY
-	db 15, PIDGEY
+	db 19, SPEAROW
+	db 19, FEAROW
 	; day
 	db 13, DODUO
-	db 14, RATTATA
+	db 14, PHANPY
 	db 14, NATU
-	db 14, MAREEP
+	db 14, SANDSHREW
 	db 13, MAREEP
 	db 15, PIDGEY
 	db 15, PIDGEY
@@ -745,7 +745,7 @@ NihonGrassWildMons:
 	db 14, NATU
 	db 14, MAREEP
 	db 13, MAREEP
-	db 15, BIPULLA
+	db 15, SNUBBULL
 	db 15, BIPULLA
 
 	map_id ROUTE_105
@@ -762,9 +762,9 @@ NihonGrassWildMons:
 	db 18, DODUO
 	db 18, RATTATA
 	db 16, NATU
-	db 18, MAREEP
-	db 18, MAREEP
+	db 18, VULPIX
 	db 16, MAGNEMITE
+	db 18, VULPIII
 	db 18, MAGNEMITE
 	; nite
 	db 18, MURKROW
@@ -867,12 +867,12 @@ NihonGrassWildMons:
 	db 21, LEDIAN
 	db 21, LEDIAN
 	; day
-	db 20, EKANS
+	db 20, MANKEY
 	db 19, ODDISH
 	db 20, PARAS
 	db 20, MILTANK
 	db 19, PHANPY
-	db 21, PONYTA
+	db 21, WARFURS
 	db 21, PONYTA
 	; nite
 	db 20, EKANS
