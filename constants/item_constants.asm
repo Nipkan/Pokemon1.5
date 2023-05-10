@@ -257,7 +257,7 @@ ENDM
 	add_tm THIEF        ; ee
 	add_tm STEEL_WING   ; ef
 	add_tm FIRE_PUNCH   ; f0
-	add_tm FURY_CUTTER  ; f1
+	add_tm SAFEGUARD  ; f1
 	add_tm NIGHTMARE    ; f2
 NUM_TMS EQU const_value - TM01 - 2 ; discount ITEM_C3 and ITEM_DC
 
@@ -285,6 +285,7 @@ ENDM
 	add_mt FLAMETHROWER
 	add_mt THUNDERBOLT
 	add_mt ICE_BEAM
+	add_mt FURY_CUTTER
 NUM_TM_HM_TUTOR = __enum__ + -1
 
 	const ITEM_FA       ; fa
