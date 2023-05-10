@@ -75,3 +75,5 @@ Conversion2 has a similar check added in 1999 that I have not removed, as it pre
 - The Warfurs line regains its pure Ice typing.
 - Tricules is pure Bug, as it was not made a Steel type till shortly before it was removed in 1999.
 - Scizor had its Bug typing switched to Flying and its Flying typing switched to Bug, to match the demo. This has no functional difference, I just thought it was funny enough to mention.
+
+- Safeguard replaces Fury Cutter as TM49. It was originally Scyther's signature move, paralled by Pinsir's Cross Cutter. Cross Cutter has a high crit rate, but Fury Cutter becomes rapidly more powerful now. All Pokémon who can learn Safeguard via TM in Gen 3 can learn it here. Bugsy now gives Double Team, and his team no longer has Fury Cutter.
