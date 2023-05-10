@@ -49,7 +49,7 @@ TMHMMoves:
 	db THIEF
 	db STEEL_WING
 	db FIRE_PUNCH
-	db FURY_CUTTER
+	db SAFEGUARD
 	db NIGHTMARE
 ; HMs
 	db CUT

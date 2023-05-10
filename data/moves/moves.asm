@@ -243,7 +243,7 @@ Moves:
 	move RAPID_SPIN,   EFFECT_RAPID_SPIN,         20, NORMAL,       100, 40,   0
 	move SWEET_SCENT,  EFFECT_EVASION_DOWN,        0, NORMAL,       100, 20,   0
 	move IRON_TAIL,    EFFECT_DEFENSE_DOWN_HIT,  100, STEEL,         60, 15,  30 ; Unknown unique effect in 1997...
-	move METAL_CLAW,   EFFECT_ATTACK_UP_HIT,      30, STEEL,        100, 10,  10
+	move METAL_CLAW,   EFFECT_ATTACK_UP_HIT,      90, ROCK,        95, 10,  10
 	move VITAL_THROW,  EFFECT_NORMAL_HIT,         50, FIGHTING,     100, 10,   0 ;A different effect was planned but hadn't been programmed yet. In the 97 demo its unique effect was identical to EFFECT_NORMAL_HIT.
 	move MORNING_SUN,  EFFECT_MORNING_SUN,         0, NORMAL,       100,  5,   0
 	move SYNTHESIS,    EFFECT_SYNTHESIS,           0, GRASS,        100,  5,   0
@@ -262,7 +262,7 @@ Moves:
 	move FUTURE_SIGHT, EFFECT_FUTURE_SIGHT,       80, PSYCHIC_TYPE,  90, 15,   0
 	move ROCK_SMASH,   EFFECT_DEFENSE_DOWN_HIT,   20, NORMAL,     100, 15,  50
 	move WHIRLPOOL,    EFFECT_TRAP_TARGET,        30, WATER,         70, 15,   0
-	move BEAT_UP,      EFFECT_ATTACK_UP_HIT,      30, STEEL,        100, 10,   10
+	move BEAT_UP,      EFFECT_ATTACK_UP_HIT,      30, STEEL,        100, 10,   20
 	move CROSS_CUTTER, EFFECT_NORMAL_HIT,         50, BUG,      	100, 25,   0
 	move COIN_HURL,    EFFECT_COIN_HURL,          40, NORMAL,    	80, 20,   0
 	move MEGAPHONE,    EFFECT_SP_ATK_DOWN,         0, NORMAL,   	85, 40,   0
