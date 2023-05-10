@@ -390,11 +390,10 @@ Text_Study101:
 	done
 
 Text_GearIsImpressive:
-	text "Wow, your #GEAR"
-	line "is impressive!"
+	text "That's such a cute"
+	line "PACK! Where'd you"
 
-	para "Did your mom get"
-	line "it for you?"
+	cont "get it?"
 	done
 
 Text_WaitPlayer:
@@ -451,11 +450,11 @@ Text_CallMomOnGear:
 	done
 
 Text_Oak2DiscoveredNewMon:
-	text "Yo, <PLAYER>!"
+	text "Is there anyone"
 
-	para "I hear PROF.OAK"
-	line "discovered some"
-	cont "new #MON."
+	line "in the world who"
+	para "doesn't like"
+	line "#MON?"
 	done
 
 SilentTownRivalText1:
@@ -514,7 +513,7 @@ SilentTownPlayersHouseSignText:
 	done
 
 SilentTownOakLabSignText:
-	text "OAK #MON LAB"
+	text "HOUSE FOR RENT"
 	done
 
 SilentTownRivalsHouseSignText:

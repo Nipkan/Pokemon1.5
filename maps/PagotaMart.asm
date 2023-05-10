@@ -36,14 +36,16 @@ PagotaMartGrannyText:
 
 PagotaMartCooltrainerMText:
 	text "#MON can hold"
-	line "items like POTION"
-	cont "and ANTIDOTE."
+	line "all sorts of"
+	cont "items."
 
-	para "But they don't"
-	line "appear to know how"
+	para "They'll use it as"
+	line "soon as it's"
+	cont "needed."
 
-	para "to use manmade"
-	line "items."
+	para "Try giving them"
+	line "POTION or"
+	cont "ANTIDOTE!"
 	done
 
 PagotaMart_MapEvents:

@@ -51,7 +51,7 @@ WestportGymBugsyScript:
 	clearevent EVENT_ROCKETS_TAKE_OVER_AQUARIUM
 	writetext BugsyText_HiveBadgeSpeech
 	buttonsound
-	verbosegiveitem TM_FURY_CUTTER
+	verbosegiveitem TM_DOUBLE_TEAM
 	iffalse .NoRoomForFuryCutter
 	setevent EVENT_GOT_TM49_FURY_CUTTER
 	writetext BugsyText_FuryCutterSpeech
@@ -275,19 +275,24 @@ BugsyText_HiveBadgeSpeech:
 	done
 
 BugsyText_FuryCutterSpeech:
-	text "TM49 contains"
-	line "FURY CUTTER."
+	text "TM32 contains"
+	line "DOUBLE TEAM."
 
-	para "If you don't miss,"
-	line "it gets stronger"
-	cont "every turn."
+	para "Your #MON gets"
+	line "harder to hit"
+	
+	para "every time you"
+	line "use it!"
 
-	para "The longer your"
-	line "battle goes, the"
-	cont "better it gets."
+	para "Use it enough,"
+	line "and you become"
+	para "untouchable!"
+	line "Ha ha ha!!!"
 
-	para "Isn't that great?"
-	line "I discovered it!"
+	para "...Ahem."
+	para "Do try your best"
+	line "not to be a poor"
+	cont "sport about it…"
 	done
 
 BugsyText_BugMonsAreDeep:

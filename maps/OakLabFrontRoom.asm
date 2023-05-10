@@ -755,8 +755,25 @@ OakLabFrontRoomSignText:
 	done	
 	
 OakLabFrontRoomComputerText:
-	text "It's a paper on"
-	line "#MON habitats."
+	text "Hm? There's an"
+	line "e-mail open on the"
+	cont "screen."
+	para "...PROF.OAK! The"
+	line "whole world's in a"
+	cont "terrible stir over"
+	cont "your whereabouts!"
+	para "As for the #MON"
+	line "you asked I search"
+	cont "for, I have yet to"
+	cont "find even a single"
+	cont "lead-- let alone"
+	cont "its hiding spot."
+	para "I suppose that's"
+	line "to be expected..."
+	cont "It's high up in"
+	cont "the sky after all."
+	para "Regards,          "
+	line "Your AIDE"
 	done
 	
 Text_RootingText:
