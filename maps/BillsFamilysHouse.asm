@@ -24,7 +24,7 @@ BillScript:
 	writetext BillTakeThisCutText
 	yesorno
 	iffalse .Refused
-	verbosegiveitem HM_CUT
+	verbosegiveitem HM_UPROOT
 	setevent EVENT_GOT_HM01_CUT
 	writetext BillImCountingOnYouText
 	waitbutton
@@ -141,9 +141,10 @@ BillTakeThisCutText:
 	done
 
 BillImCountingOnYouText:
-	text "CUT allows your"
-	line "#MON to chop"
-	cont "away small trees!"
+	text "UPROOT allows your"
+	line "#MON to pull"
+	para "small trees out"
+	line "from the ground!"
 	para "It may prove"
 	line "indespensible!"
 	para "And remember,"

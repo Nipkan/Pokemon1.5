@@ -57,7 +57,7 @@ EndonCave2FEther:
 BirdKeeperTheoSeenText:
 	text "My beautiful birds"
 	line "have no room to"
-	cont "FLY in here!"
+	cont "WIND RIDE in here!"
 	done
 
 BirdKeeperTheoBeatenText:
@@ -69,8 +69,9 @@ BirdKeeperTheoAfterBattleText:
 	text "How the heck do"
 	line "you get out?"
 
-	para "I want to FLY!"
-	line "FLY, far away!"
+	para "I want to ride!"
+	line "Ride the wind,"
+	cont "far far away!"
 	done
 
 SailorTerrellSeenText:

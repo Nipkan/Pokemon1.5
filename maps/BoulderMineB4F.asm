@@ -25,7 +25,7 @@ BoulderMineB4FTMGigaDrain:
 	itemball TM_GIGA_DRAIN
 
 BoulderMineB4FStrength:
-	itemball HM_STRENGTH
+	itemball HM_STRONG_ARM
 
 BoulderMineB4FCovenantOrb:
 	itemball COVENANT_ORB

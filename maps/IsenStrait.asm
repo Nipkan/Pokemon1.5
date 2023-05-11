@@ -83,9 +83,9 @@ SwimmerfLoriBeatenText:
 	done
 
 SwimmerfLoriAfterBattleText:
-	text "SURF is no longer"
-	line "the only HM move"
-	cont "you use in water."
+	text "There's more than"
+	line "one HM move needed"
+	cont "to cross water."
 	done
 
 SwimmermCameronSeenText:

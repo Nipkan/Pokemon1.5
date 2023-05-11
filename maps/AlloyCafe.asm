@@ -16,7 +16,7 @@ AlloyCafeStrengthSailorScript:
 	iftrue .GotStrength
 	writetext AlloyCafeStrengthSailorText
 	buttonsound
-	verbosegiveitem HM_FLY
+	verbosegiveitem HM_WIND_RIDE
 	setevent EVENT_GOT_HM02_FLY
 .GotStrength:
 	writetext AlloyCafeStrengthSailorText_GotStrength
@@ -34,13 +34,14 @@ AlloyCafeSailorScript:
 	jumptextfaceplayer AlloyCafeSailorText
 
 AlloyCafeStrengthSailorText:
-	text "Hah! Sailing is"
-	line "such an outdated"
-	cont "way to travel!"
-	para "Walking is, too!"
-	para "Why not have your"
-	line "#MON FLY you"
-	cont "everywhere?"
+	text "Hah! Sailing the"
+	line "seas is such an"
+	para "outdated way to"
+	line "travel!"
+	para "Why sail the seas"
+	line "when you can sail"
+	para "the skies with"
+	line "your #MON?"
 	done
 
 AlloyCafeStrengthSailorText_GotStrength:

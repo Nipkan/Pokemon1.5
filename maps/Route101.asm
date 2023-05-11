@@ -99,7 +99,7 @@ CatchingTutorialDudeScript:
 	yesorno
 	iffalse .Declined
 	closetext
-	loadwildmon RATTATA, 5
+	loadwildmon PIKACHU, 5
 	catchtutorial BATTLETYPE_TUTORIAL
 	opentext
 	writetext CatchingTutorialDebriefText
@@ -145,11 +145,11 @@ DebugSign:
 ;	setflag ENGINE_STORMBADGE
 ;	setflag ENGINE_RISINGBADGE
 ;	setflag ENGINE_GLACIERBADGE
-;	giveitem HM_FLY
+	giveitem HM_WIND_RIDE
 ;	giveitem HM_WATERFALL
-;	giveitem HM_SURF
-;	giveitem HM_CUT
-;	giveitem HM_STRENGTH
+	giveitem HM_WATER_SPORT
+	giveitem HM_UPROOT
+	giveitem HM_STRONG_ARM
 ;	giveitem HM_WHIRLPOOL
 ;	giveitem TM_FLASH
 ;	giveitem HM_ROCK_SMASH

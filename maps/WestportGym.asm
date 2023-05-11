@@ -265,7 +265,7 @@ BugsyText_HiveBadgeSpeech:
 	line "even traded ones."
 
 	para "#MON that know"
-	line "STRENGTH can now"
+	line "STRONG ARM can now"
 
 	para "use it outside"
 	line "of battle too."

@@ -29,7 +29,7 @@ AlloyPokecenter1FFisherText:
 	line "generous."
 
 	para "He taught my"
-	line "#MON FLY."
+	line "#MON WIND RIDE."
 
 	para "Now it can take"
 	line "me anywhere I've"

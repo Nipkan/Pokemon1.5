@@ -80,8 +80,8 @@ Route105YoungsterText_DirectionsToMrPokemonsHouse:
 	text "I'm tired."
 	para "I don't want to"
 	line "walk anymore."
-	para "I wish my #MON"
-	line "could FLY me to"
+	para "I wish I could"
+	line "WIND RIDE away to"
 	cont "another town."
 	done
 

@@ -23,7 +23,7 @@ BirdonElderHousePokefanMScript:
 	writetext ElderTakeThisSurfText
 	yesorno
 	iffalse .Refused
-	verbosegiveitem HM_SURF
+	verbosegiveitem HM_WATER_SPORT
 	setevent EVENT_GOT_HM03_SURF
 	writetext ElderSurfDescriptionText
 	waitbutton
@@ -92,8 +92,8 @@ ElderSurfDescriptionText:
 	line "to teach your"
 	para "#MON a move"
 	line "that will let them"
-	para "ferry you across"
-	line "the water."
+	para "jet you across the"
+	line "water's surface."
 	para "There isn't much"
 	line "water in this"
 	para "town, but I'm sure"

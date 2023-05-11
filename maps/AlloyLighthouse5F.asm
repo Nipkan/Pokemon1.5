@@ -80,12 +80,13 @@ BirdKeeperDenisBeatenText:
 
 BirdKeeperDenisAfterBattleText:
 	text "My #MON learned"
-	line "how to use FLY in"
-	cont "SUNPOINT."
+	line "how to WIND RIDE"
+	cont "in SUNPOINT."
 
 	para "Well, since I'm a"
-	line "loser, I'll FLY"
-	cont "across the sea…"
+	line "loser, I'll ride"
+	cont "the wind across"
+	cont "the ocean…"
 	done
 
 AlloyLighthouse5F_MapEvents:

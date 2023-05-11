@@ -401,8 +401,8 @@ Route102LassText:
 	para "If you need to"
 	line "get through, a"
 	para "#MON could"
-	line "probably CUT the"
-	cont "tree."
+	line "probably remove"
+	cont "the tree."
 	done
 
 PsychicMarkSeenText:

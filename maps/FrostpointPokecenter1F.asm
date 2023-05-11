@@ -21,8 +21,8 @@ FrostpointPokecenter1FCooltrainerFText:
 	text "It's too difficult"
 	line "to travel here by"
 	cont "land or sea."
-	para "I have my #MON"
-	line "FLY me here."
+	para "My #MON help me"
+	line "WIND RIDE here."
 	done
 
 FrostpointPokecenter1FFisherText:

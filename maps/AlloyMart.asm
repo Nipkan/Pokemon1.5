@@ -24,8 +24,8 @@ AlloyMartCooltrainerFText:
 	text "Do your #MON"
 	line "already know the"
 
-	para "move for carrying"
-	line "people on water?"
+	para "move for skating"
+	line "across the water?"
 	done
 
 AlloyMartLassText:

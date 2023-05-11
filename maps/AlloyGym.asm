@@ -299,8 +299,8 @@ Jasmine_BadgeSpeech:
 	cont "DEFENSE."
 	
 	para "It also lets you"
-	line "use FLY outside"
-	cont "of battle."
+	line "use WIND RIDE"
+	cont "out of battle."
 
 	para "You've earned this"
 	line "too."

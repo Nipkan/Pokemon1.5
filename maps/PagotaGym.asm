@@ -227,7 +227,7 @@ FalknerZephyrBadgeText:
 	para "It also enables"
 	line "#MON to use"
 
-	para "CUT, if they"
+	para "UPROOT, if they"
 	line "have it, anytime."
 
 	para "Here--take this"

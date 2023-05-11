@@ -635,9 +635,9 @@ Text_EndDemo:
 	line "things for you"
 	para "that will make"
 	line "exploring easier."
-	para "HM02 FLY and the"
-	line "BADGE you need to"
-	cont "use it!"
+	para "HM02 WIND RIDE,"
+	line "and the BADGE you"
+	cont "need to use it!"
 	done
 	
 Text_ReceivedMineralBadgeDemo:
