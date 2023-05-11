@@ -26,7 +26,7 @@ CharmanderEggMoves:
 	db TAKE_DOWN
 	db SKULL_BASH
 	db SACRED_FIRE
-	db ANCIENTPOWER
+	db DOUBLE_KICK ; ancientpower became rock head
 	db -1 ; end
 
 SquirtleEggMoves:
@@ -137,7 +137,7 @@ DiglettEggMoves:
 	db ROCK_THROW
 	db SKULL_BASH
 	db SPIKES
-;	db ANCIENTPOWER // i forgot what i did with ancientpower...
+	db LOCK_ON ; ancientpower became rock head
 	db PURSUIT
 	db -1 ; end
 
@@ -164,7 +164,7 @@ PoliwagEggMoves:
 	db SPLASH
 	db BUBBLEBEAM
 	db HAZE
-	db FUTURE_SIGHT
+	db MIST ; FUTURE_SIGHT became UPROOT
 	db -1 ; end
 
 AbraEggMoves:
@@ -217,7 +217,7 @@ KoltaEggMoves:
 
 SlowpokeEggMoves:
 	db SAFEGUARD
-	db FUTURE_SIGHT
+	db SLAM ; FUTURE_SIGHT became UPROOT
 	db LIGHT_SCREEN
 	db OCTAZOOKA
 	db ICE_BEAM
@@ -276,7 +276,7 @@ GastlyEggMoves:
 	db PSYWAVE
 	db PERISH_SONG
 	db TELEPORT
-;	db BEAT_UP // no mons learn this, i'm replacing it with a 97 move
+	db HAZE ; BEAT_UP became STRONG_ARM
 	db CONFUSION
 	db -1 ; end
 
@@ -483,18 +483,18 @@ ChikoritaEggMoves:
 CubburnEggMoves:
 	db FURY_SWIPES
 	db QUICK_ATTACK
-	db REVERSAL
+;	db REVERSAL
 	db THRASH
 	db FORESIGHT
 	db FAINT_ATTACK
-	db SUBMISSION
+;	db SUBMISSION 	// You REALLY don't need any more moves...
 	db -1 ; end
 
 PalssioEggMoves:
 	db ICY_WIND
 	db BLIZZARD
 	db HYDRO_PUMP
-	db ANCIENTPOWER
+;	db ANCIENTPOWER
 	db RAZOR_WIND
 	db ROCK_SLIDE
 	db -1 ; end
@@ -638,12 +638,14 @@ SunfloraEggMoves:
 MolambinoEggMoves:
 	db RAIN_DANCE
 	db REVERSAL
+	db ROCK_HEAD
+	db SAFEGUARD
 	db SWAGGER
 	db -1 ; end
 
 LurreelEggMoves:
 	db BODY_SLAM
-	db ANCIENTPOWER
+	db ROCK_HEAD
 	db SAFEGUARD
 	db -1 ; end
 
@@ -660,7 +662,7 @@ VulpiiiEggMoves:
 	db BITE
 	db LOVELY_KISS
 	db REVERSAL
-	db FUTURE_SIGHT
+	db TAKE_DOWN ; FUTURE_SIGHT became UPROOT
 	db SACRED_FIRE
 	db -1 ; end
 
@@ -785,7 +787,7 @@ MantineEggMoves:
 
 SkarmoryEggMoves:
 	db DRILL_PECK
-;	db AEROBLAST // can't be learned, didn't exist either
+	db WIND_RIDE ; // probably pointless
 	db WHIRLWIND
 	db HAZE
 	db MIRROR_MOVE
@@ -793,7 +795,7 @@ SkarmoryEggMoves:
 
 HoundourEggMoves:
 	db FIRE_SPIN
-	db DRAGON_RAGE ; rage was cooler
+	db DRAGON_RAGE ; look! a cooler rage
 	db SACRED_FIRE
 	db COUNTER
 	db FOCUS_ENERGY
@@ -802,7 +804,7 @@ HoundourEggMoves:
 PhanpyEggMoves:
 	db FOCUS_ENERGY
 	db SAND_ATTACK
-;	db ANCIENTPOWER ???
+	db ROCK_HEAD
 	db COUNTER
 	db LOCK_ON
 	db -1 ; end

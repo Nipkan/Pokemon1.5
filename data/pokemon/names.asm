@@ -164,7 +164,7 @@ PokemonNames::
 	db "HOOTHOOT@@"
 	db "HOOTHAWK@@"
 	db "LEDYBA@@@@"
-	db "TRISTAR@@@"
+	db "LEDYBOLIDE"
 	db "SPINARAK@@"
 	db "ARIADNID@@"
 	db "CROBAT@@@@"

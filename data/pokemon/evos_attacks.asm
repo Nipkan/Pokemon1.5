@@ -719,7 +719,7 @@ MankeyEvosAttacks:
 	db 7, LEER
 	db 13, RAGE
 	db 19, KARATE_CHOP
-	db 25, METAL_CLAW ; should be rock head
+	db 25, ROCK_HEAD ; should be rock head
 	db 31, FOCUS_ENERGY
 	db 37, SEISMIC_TOSS
 	db 43, FURY_SWIPES
@@ -733,7 +733,7 @@ PrimeapeEvosAttacks:
 	db 8, LEER
 	db 15, RAGE
 	db 22, KARATE_CHOP
-	db 29, METAL_CLAW ; should be rock head
+	db 29, ROCK_HEAD ; should be rock head
 	db 36, FOCUS_ENERGY
 	db 43, SEISMIC_TOSS
 	db 50, FURY_SWIPES
@@ -1467,7 +1467,7 @@ RhyhornEvosAttacks:
 	db 23, FURY_ATTACK
 	db 31, ENDURE
 	db 40, HORN_DRILL
-	db 49, METAL_CLAW ; replace with rock head
+	db 49, ROCK_HEAD ; replace with rock head
 	db 59, MUD_SLAP
 	db 69, TAKE_DOWN
 	db 0 ; no more level-up moves
@@ -1480,7 +1480,7 @@ RhydonEvosAttacks:
 	db 26, FURY_ATTACK
 	db 35, ENDURE
 	db 45, HORN_DRILL
-	db 55, METAL_CLAW ; replace with rock head
+	db 55, ROCK_HEAD ; replace with rock head
 	db 66, MUD_SLAP
 	db 77, TAKE_DOWN
 	db 0 ; no more level-up moves

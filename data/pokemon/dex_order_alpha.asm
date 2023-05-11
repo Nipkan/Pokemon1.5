@@ -117,6 +117,7 @@ AlphabeticalPokedexOrder:
 	db KRABBY
 	db LAPRAS
 	db LEDYBA
+	db LEDIAN
 	db LICKILORD
 	db LICKITUNG
 	db LURREEL
@@ -228,7 +229,6 @@ AlphabeticalPokedexOrder:
 	db TENTACRUEL
 	db TOGEPI
 	db TRICULES
-	db LEDIAN
 	db TYKER
 	db UMBREON
 	db UNOWN
