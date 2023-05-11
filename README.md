@@ -8,6 +8,9 @@ However, since they were working backwards from the final release version of Cry
 Unfortunately for me I don't actually know assembly so this will probably take a while.
 
 So far:
+- The HMs for Cut, Strength, Fly, and Surf now contain different moves previously exclusive to the demo. In the demo, these moves seemed to be a work in progress, and their power, PP, and secondary effects seemed to still be placeholder, so they have been given original effects based on their names or descriptions. The field effects are the same as the original HMs, but the list of Pokémon that can learn these new HMs is quite different to the list of those who could learn the old ones...!
+(The old moves remain in the move list untouched. The new HM moves replace Future Sight, Beat Up, AncientPower, and Aeroblast. Aeroblast was already inaccessible in regular SG97, and the other 3 became inaccessible when the learnsets reverted. At some point, tutors will be added to teach the old field moves. Also I haven't changed any animations yet...)
+
 - Learnsets are now 1:1 with the demo. Exceptions were made for Pokémon without complete learnsets, like Girafarig's line, who only learned 3 moves each. Those three moves were incorporated into the moveset they had in SG97. Any instances of Synchronize are currently replaced with Pain Split, which existed seperately but is the closest existing move to Synchronize's described effect. Synchronize was not functional in the 1997 demo. 
 
 - Metal Claw, a move that does not appear outside of learnsets and did not exist, is replaced with Rock Head, a move that exists in the demo's learnsets but not the final game. Rock Head had no special effects in the demo but was described in game as potentially causing flinch, so it was given the same flinch rate as Headbutt.
