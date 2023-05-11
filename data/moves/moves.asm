@@ -188,7 +188,7 @@ Moves:
 	move CURSE,        EFFECT_CURSE,               0, GHOST,   100, 10,   0
 	move FLAIL,        EFFECT_REVERSAL,            1, NORMAL,       100, 15,   0
 	move CONVERSION2,  EFFECT_CONVERSION2,         0, NORMAL,       100, 15,   0
-	move AEROBLAST,    EFFECT_NORMAL_HIT,       	40, FLYING,       100, 10,   0
+	move WIND_RIDE,    EFFECT_NORMAL_HIT,       	40, FLYING,       100, 20,   0 ; ***wind ride
 	move COTTON_SPORE, EFFECT_SPEED_DOWN_2,        0, GRASS,         85, 40,   0
 	move REVERSAL,     EFFECT_REVERSAL,            1, FIGHTING,     100, 15,   0
 	move SPITE,        EFFECT_SPITE,               0, GHOST,        100, 5,   0
@@ -243,7 +243,8 @@ Moves:
 	move RAPID_SPIN,   EFFECT_RAPID_SPIN,         20, NORMAL,       100, 40,   0
 	move SWEET_SCENT,  EFFECT_EVASION_DOWN,        0, NORMAL,       100, 20,   0
 	move IRON_TAIL,    EFFECT_DEFENSE_DOWN_HIT,  100, STEEL,         60, 15,  30 ; Unknown unique effect in 1997...
-	move METAL_CLAW,   EFFECT_ATTACK_UP_HIT,      90, ROCK,        95, 10,  10
+	move ROCK_HEAD,   EFFECT_FLINCH_HIT,     	  90, ROCK,        95, 10,  10 ; ***Rock head
+;	move METAL_CLAW,   EFFECT_ATTACK_UP_HIT,      90, ROCK,        95, 10,  10
 	move VITAL_THROW,  EFFECT_NORMAL_HIT,         50, FIGHTING,     100, 10,   0 ;A different effect was planned but hadn't been programmed yet. In the 97 demo its unique effect was identical to EFFECT_NORMAL_HIT.
 	move MORNING_SUN,  EFFECT_MORNING_SUN,         0, NORMAL,       100,  5,   0
 	move SYNTHESIS,    EFFECT_SYNTHESIS,           0, GRASS,        100,  5,   0
@@ -255,14 +256,16 @@ Moves:
 	move SUNNY_DAY,    EFFECT_SUNNY_DAY,           0, FIRE,         100,  5,   0 ; Same here.
 	move CRUNCH,       EFFECT_SP_DEF_DOWN_HIT,    80, DARK,         100, 15,  20
 	move MIRROR_COAT,  EFFECT_MIRROR_COAT,         1, NORMAL,	    100, 20,   0
-	move PSYCH_UP,     EFFECT_PSYCH_UP,            0, NORMAL,       100, 10,   0
+	move PSYCH_UP,     EFFECT_PSYCH_UP,            0, NORMAL,       100, 10,   0 ; B
 	move EXTREMESPEED, EFFECT_PRIORITY_HIT,       80, NORMAL,       100,  5,   0
-	move ANCIENTPOWER, EFFECT_ALL_UP_HIT,         60, ROCK,         100,  5,  10
+	move WATER_SPORT,  EFFECT_PRIORITY_HIT,       50, WATER,        100, 20,  10
+;	move ANCIENTPOWER, EFFECT_ALL_UP_HIT,         60, ROCK,         100,  5,  10
 	move SHADOW_BALL,  EFFECT_SP_DEF_DOWN_HIT,    80, GHOST,        100, 15,  20
-	move FUTURE_SIGHT, EFFECT_FUTURE_SIGHT,       80, PSYCHIC_TYPE,  90, 15,   0
-	move ROCK_SMASH,   EFFECT_DEFENSE_DOWN_HIT,   20, NORMAL,     100, 15,  50
+	move UPROOT,	   EFFECT_UPROOT,	          60, NORMAL, 		100, 15,   0 ; ***uproot
+;	move FUTURE_SIGHT, EFFECT_FUTURE_SIGHT,       80, PSYCHIC_TYPE,  90, 15,   0 
+	move ROCK_SMASH,   EFFECT_DEFENSE_DOWN_HIT,   20, FIGHTING,     100, 15,  50
 	move WHIRLPOOL,    EFFECT_TRAP_TARGET,        30, WATER,         70, 15,   0
-	move BEAT_UP,      EFFECT_ATTACK_UP_HIT,      30, STEEL,        100, 10,   20
+	move STRONG_ARM,      EFFECT_ATTACK_UP_HIT,      35, STEEL,        100, 20,  30 ; ***strong arm
 	move CROSS_CUTTER, EFFECT_NORMAL_HIT,         50, BUG,      	100, 25,   0
 	move COIN_HURL,    EFFECT_COIN_HURL,          40, NORMAL,    	80, 20,   0
 	move MEGAPHONE,    EFFECT_SP_ATK_DOWN,         0, NORMAL,   	85, 40,   0

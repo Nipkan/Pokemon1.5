@@ -1187,7 +1187,7 @@ IronTailDescription:
 
 MetalClawDescription:
 	db   "An attack that may"
-	next "up user's ATTACK.@"
+	next "make foe flinch.@"
 
 VitalThrowDescription:
 	db   "Attack by throwing"
@@ -1242,16 +1242,16 @@ ExtremespeedDescription:
 	next "strike move.@"
 
 AncientpowerDescription:
-	db   "An attack that may"
-	next "raise all stats.@"
+	db   "A fast water-type"
+	next "move. Hits first.@"
 
 ShadowBallDescription:
 	db   "An attack that may"
 	next "lower SPCL.DEF.@"
 
 FutureSightDescription:
-	db   "An attack that"
-	next "hits on 3rd turn.@"
+	db   "Flings foe to deal"
+	next "damage. Hits last.@"
 
 RockSmashDescription:
 	db   "An attack that may"
@@ -1262,8 +1262,8 @@ WhirlpoolDescription:
 	next "2-5 turns.@"
 
 BeatUpDescription:
-	db   "Party #MON join"
-	next "in the attack.@"
+	db   "An attack that may"
+	next "up user's ATTACK.@"
 	
 CrossCutterDescription:
 	db   "Has a high criti-"
