@@ -118,8 +118,8 @@ LookTownMapText:
 	done
 
 WindowText:
-	text "My reflection!"
-	line "Lookin' good!"
+	text "A window. No"
+	line "problem here."
 	done
 
 TVText:

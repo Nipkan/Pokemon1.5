@@ -1841,12 +1841,12 @@ _CantUseItemText::
 _UseCutText::
 	text_ram wStringBuffer2
 	text " used"
-	line "CUT!"
+	line "UPROOT!"
 	prompt
 
 _CutNothingText::
 	text "There's nothing to"
-	line "CUT here."
+	line "UPROOT here."
 	prompt
 
 _BlindingFlashText::
@@ -1858,5 +1858,5 @@ _BlindingFlashText::
 _UsedSurfText::
 	text_ram wStringBuffer2
 	text " used"
-	line "SURF!"
+	line "WATER SPORT!"
 	done

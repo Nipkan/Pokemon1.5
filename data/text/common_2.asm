@@ -1,16 +1,16 @@
 _CantSurfText::
-	text "You can't SURF"
-	line "here."
+	text "You can't use"
+	line "WATER SPORT here."
 	prompt
 
 _AlreadySurfingText::
 	text "You're already"
-	line "SURFING."
+	line "in the water."
 	prompt
 
 _AskSurfText::
-	text "The water is calm."
-	line "Want to SURF?"
+	text "A heavy current."
+	line "Use WATER SPORT?"
 	done
 
 _UseWaterfallText::
@@ -58,14 +58,14 @@ _CantUseTeleportText::
 	done
 
 _AlreadyUsingStrengthText::
-	text "A #MON is using"
-	line "STRENGTH already."
+	text "STRONG ARM has"
+	line "already been used."
 	prompt
 
 _UseStrengthText::
 	text_ram wStringBuffer2
 	text " used"
-	line "STRENGTH!"
+	line "STRONG ARM!"
 	done
 
 _MoveBoulderText::
@@ -80,7 +80,7 @@ _AskStrengthText::
 	line "able to move this."
 
 	para "Want to use"
-	line "STRENGTH?"
+	line "STRONG ARM?"
 	done
 
 _BouldersMoveText::
@@ -208,15 +208,16 @@ _GotOffBoardText::
 
 
 _AskCutText::
-	text "This tree can be"
-	line "CUT!"
+	text "A small tree is"
+	line "blocking the way."
 
-	para "Want to use CUT?"
+	para "Want to use"
+	line "UPROOT?"
 	done
 
 _CanCutText::
-	text "This tree can be"
-	line "CUT!"
+	text "A small tree is"
+	line "blocking the way."
 	done
 
 _FoundItemText::
@@ -268,7 +269,7 @@ _PoisonWhiteoutText::
 _UseSweetScentText::
 	text_ram wStringBuffer3
 	text " used"
-	line "SWEET SCENT!"
+	line "TEMPT!"
 	done
 
 _SweetScentNothingText::
@@ -1047,7 +1048,7 @@ _ItemsTooImportantText::
 	prompt
 
 _ItemsOakWarningText::
-	text "OAK: <PLAYER>!"
+	text "KEN: <PLAYER>!"
 	line "This isn't the"
 	cont "time to use that!"
 	done

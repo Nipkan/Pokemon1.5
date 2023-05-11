@@ -68,8 +68,8 @@ HasANightmareText:
 	prompt
 
 HurtByCurseText:
-	text "<USER>'s"
-	line "hurt by the CURSE!"
+	text "Nails dig into"
+	line "<USER>!"
 	prompt
 
 SandstormHitsText:
@@ -103,7 +103,7 @@ BattleText_UserRecoveredPPUsing:
 BattleText_TargetWasHitByFutureSight:
 	text "<TARGET>"
 	line "was hit by FUTURE"
-	cont "SIGHT!"
+	cont "SIGHT!?"
 	prompt
 
 BattleText_SafeguardFaded:
@@ -962,7 +962,7 @@ WasDefrostedText:
 
 PutACurseText:
 	text "<USER>"
-	line "covered by a veil!"
+	line "pierces its own"
 
 	para "body in effigy of"
 	line "<TARGET>!"
