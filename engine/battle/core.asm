@@ -1989,7 +1989,7 @@ HandleFutureSight:
 	ld a, BATTLE_VARS_MOVE
 	call GetBattleVarAddr
 	push af
-	ld a, FUTURE_SIGHT
+	ld a, STRUGGLE
 	ld [hl], a
 
 	callfar UpdateMoveData
