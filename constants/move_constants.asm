@@ -182,7 +182,7 @@
 	const CURSE        ; ae
 	const FLAIL        ; af
 	const CONVERSION2  ; b0
-	const AEROBLAST    ; b1
+	const WIND_RIDE    ; b1
 	const COTTON_SPORE ; b2
 	const REVERSAL     ; b3
 	const SPITE        ; b4
@@ -237,7 +237,7 @@
 	const RAPID_SPIN   ; e5
 	const SWEET_SCENT  ; e6
 	const IRON_TAIL    ; e7
-	const METAL_CLAW   ; e8
+	const ROCK_HEAD   ; e8
 	const VITAL_THROW  ; e9
 	const MORNING_SUN  ; ea
 	const SYNTHESIS    ; eb
@@ -251,12 +251,12 @@
 	const MIRROR_COAT  ; f3
 	const PSYCH_UP     ; f4
 	const EXTREMESPEED ; f5
-	const ANCIENTPOWER ; f6
+	const WATER_SPORT ; f6
 	const SHADOW_BALL  ; f7
-	const FUTURE_SIGHT ; f8
+	const UPROOT	   ; f8
 	const ROCK_SMASH   ; f9
 	const WHIRLPOOL    ; fa
-	const BEAT_UP      ; fb
+	const STRONG_ARM   ; fb
 	const CROSS_CUTTER ; a5
 	const COIN_HURL    ; fc
 	const MEGAPHONE    ; fd

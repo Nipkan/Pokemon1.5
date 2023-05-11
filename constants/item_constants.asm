@@ -269,10 +269,10 @@ endc
 	enum \1_TMNUM
 ENDM
 
-	add_hm CUT          ; f3
-	add_hm FLY          ; f4
-	add_hm SURF         ; f5
-	add_hm STRENGTH     ; f6
+	add_hm UPROOT          ; f3
+	add_hm WIND_RIDE          ; f4
+	add_hm WATER_SPORT     ; f5
+	add_hm STRONG_ARM     ; f6
 	add_hm ROCK_SMASH        ; f7
 	add_hm WHIRLPOOL    ; f8
 	add_hm WATERFALL    ; f9
@@ -285,7 +285,10 @@ ENDM
 	add_mt FLAMETHROWER
 	add_mt THUNDERBOLT
 	add_mt ICE_BEAM
-	add_mt FURY_CUTTER
+	add_mt FLY
+	add_mt CUT
+	add_mt STRENGTH
+	add_mt SURF
 NUM_TM_HM_TUTOR = __enum__ + -1
 
 	const ITEM_FA       ; fa
