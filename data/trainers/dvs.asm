@@ -9,7 +9,7 @@ TrainerClassDVs:
 	dn  9,  8,  8,  8 ; JASMINE
 	dn  9,  8,  8,  8 ; CHUCK
 	dn  7, 12, 13, 13 ; CLAIR
-	dn 13, 13, 13, 13 ; RIVAL1
+	dn 13, 9, 13, 13 ; RIVAL1
 	dn  9,  8,  8,  8 ; POKEMON_PROF
 	dn 13, 12, 13, 13 ; WILL
 	dn 13, 12, 13, 13 ; CAL
@@ -30,7 +30,7 @@ TrainerClassDVs:
 	dn 13,  8, 12,  8 ; COOLTRAINERM
 	dn  7, 12, 12,  8 ; COOLTRAINERF
 	dn  6,  9, 12,  8 ; BEAUTY
-	dn  9,  8,  8,  8 ; POKEMANIAC
+	dn 10, 10, 10, 10 ; POKEMANIAC
 	dn 13,  8, 10,  8 ; GRUNTM
 	dn  9,  8,  8,  8 ; GENTLEMAN
 	dn  9,  8,  8,  8 ; SKIER
@@ -42,7 +42,7 @@ TrainerClassDVs:
 	dn  7,  8,  8,  8 ; SWIMMERF
 	dn  9,  8,  8,  8 ; SAILOR
 	dn  9,  8,  8,  8 ; SUPER_NERD
-	dn  9,  8,  8,  8 ; RIVAL2
+	dn  14,  9,  14,  14 ; RIVAL2
 	dn  9,  8,  8,  8 ; GUITARIST
 	dn 10,  8,  8,  8 ; HIKER
 	dn  9,  8,  8,  8 ; BIKER
@@ -63,7 +63,7 @@ TrainerClassDVs:
 	dn  6,  8,  8, 10 ; KIMONO_GIRL
 	dn  6,  8, 10,  8 ; TWINS
 	dn  6, 13,  8,  8 ; POKEFANF
-	dn 15, 13, 13, 14 ; RED
+	dn 15, 15, 9, 15 ; RED
 	dn  9, 13, 13, 13 ; BLUE
 	dn  9,  8,  8,  8 ; OFFICER
 	dn  7, 14, 10,  8 ; GRUNTF
