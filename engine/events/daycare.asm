@@ -438,7 +438,7 @@ DayCareManOutside:
 	text_end
 
 DayCare_GiveEgg:
-	ld a, [wEggMonLevel]
+	ld a, 2;[wEggMonLevel]
 	ld [wCurPartyLevel], a
 	ld hl, wPartyCount
 	ld a, [hl]

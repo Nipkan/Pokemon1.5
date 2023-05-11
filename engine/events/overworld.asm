@@ -493,7 +493,7 @@ TrySurfOW::
 	call CheckEngineFlag
 	jr c, .quit
 
-	ld d, SURF
+	ld d, WATER_SPORT
 	call CheckPartyMove
 	jr c, .quit
 
@@ -1036,7 +1036,7 @@ BouldersMayMoveText:
 	text_end
 
 TryStrengthOW:
-	ld d, STRENGTH
+	ld d, STRONG_ARM
 	call CheckPartyMove
 	jr c, .nope
 
@@ -1760,7 +1760,7 @@ GotOffBikeText:
 
 
 TryCutOW::
-	ld d, CUT
+	ld d, UPROOT
 	call CheckPartyMove
 	jr c, .cant_cut
 
